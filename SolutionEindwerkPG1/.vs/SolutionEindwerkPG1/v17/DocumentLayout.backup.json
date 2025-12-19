@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lucas Petit\\Documents\\HoGent\\EindwerkPG1\\SolutionEindwerkPG1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSimUI.csproj|c:\\users\\lucas petit\\documents\\hogent\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSimUI.csproj|solutionrelative:klantensimui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Petit\\Documents\\HoGent\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "KlantenSimUI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Lucas Petit\\Documents\\HoGent\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "KlantenSimUI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T13:19:49.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
