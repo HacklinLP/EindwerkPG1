@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlantenSim_UI_WPF", "KlantenSimUI\KlantenSim_UI_WPF.csproj", "{B7D1D921-3F69-42CD-B4A4-305F3033067D}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlantenSim_DL", "KlantenSimDL\KlantenSim_DL.csproj", "{4C9C922B-003D-44DE-A179-90DCD8A564EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlantenSim_UI_ConsoleApp", "KlantenSim_ConsoleApp\KlantenSim_UI_ConsoleApp.csproj", "{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlantenSim_Utils", "KlantenSim_Utils\KlantenSim_Utils.csproj", "{C7A76842-4B5C-436E-92D9-BED45C4187F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7A76842-4B5C-436E-92D9-BED45C4187F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A76842-4B5C-436E-92D9-BED45C4187F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A76842-4B5C-436E-92D9-BED45C4187F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A76842-4B5C-436E-92D9-BED45C4187F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
