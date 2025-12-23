@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KlantenSim_BL.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace KlantenSim_BL.Interfaces
 {
     public interface IAdresLezer
     {
-        List<string[]> LeesAdressen(string pad);
+        List<Adres> LeesAdressen(string pad);
     }
 }

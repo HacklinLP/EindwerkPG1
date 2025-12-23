@@ -1,4 +1,6 @@
 ﻿using KlantenSim_BL.Interfaces;
+using KlantenSim_BL.Managers;
+using KlantenSim_Utils;
 using Microsoft.Extensions.Configuration;
 
 namespace KlantenSim_ConsoleApp
@@ -9,27 +11,28 @@ namespace KlantenSim_ConsoleApp
         {
             Console.WriteLine("Hello, World!");
 
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            //var builder = new ConfigurationBuilder()
+            //    .SetBasePath(Directory.GetCurrentDirectory())
+            //    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-            var config = builder.Build();
+            //var config = builder.Build();
 
-            string? connectionString = config.GetConnectionString("SQLserver");
-            string? folder = config.GetSection("AppSettings")["folder"];
-            string? bestandsnaam = config.GetSection("AppSettings")["ProvincieIDsVlaanderen"];
+            //string? connectionString = config.GetConnectionString("SQLserver");
+            //string? folder = config.GetSection("AppSettings")["folder"];
+            //string? bestandsnaam = config.GetSection("AppSettings")["ProvincieIDsVlaanderen"];
 
-            if (string.IsNullOrEmpty(bestandsnaam))
-            {
-                Console.WriteLine("Bestandsnaam is not configured.");
-                return;
-            }
+            //if (string.IsNullOrEmpty(bestandsnaam))
+            //{
+            //    Console.WriteLine("Bestandsnaam is not configured.");
+            //    return;
+            //}
 
-            // You must instantiate adresLezer with a concrete implementation.
-            // Replace 'ConcreteAdresLezer' with the actual class that implements IAdresLezer.
-            
+            IAdresLezer lezer = BestandLezerFactory.MaakLezer();
 
-            var output = adresLezer.LeesAdressen(bestandsnaam);
+            BestandManager manager = new BestandManager(lezer);
+
+            manager.StartTest(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Denemarken\denmark_streets2.csv");
+
         }
     }
 }

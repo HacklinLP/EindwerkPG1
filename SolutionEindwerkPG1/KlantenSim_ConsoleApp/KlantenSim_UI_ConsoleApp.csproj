@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KlantenSimBL\KlantenSim_BL.csproj" />
+    <ProjectReference Include="..\KlantenSim_Utils\KlantenSim_Utils.csproj" />
   </ItemGroup>
 
 </Project>

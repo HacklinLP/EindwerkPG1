@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj": {
+    "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\KlantenSim_DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj",
-        "projectName": "KlantenSim_UI_ConsoleApp",
-        "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\KlantenSim_DL.csproj",
+        "projectName": "KlantenSim_DL",
+        "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\KlantenSim_DL.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -118,6 +118,78 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj",
+        "projectName": "KlantenSim_UI_ConsoleApp",
+        "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\KlantenSim_BL.csproj": {
+                "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\KlantenSim_BL.csproj"
+              },
+              "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj": {
+                "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -132,6 +204,78 @@
               "version": "[10.0.1, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj",
+        "projectName": "KlantenSim_Utils",
+        "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\KlantenSim_BL.csproj": {
+                "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\KlantenSim_BL.csproj"
+              },
+              "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\KlantenSim_DL.csproj": {
+                "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\KlantenSim_DL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",

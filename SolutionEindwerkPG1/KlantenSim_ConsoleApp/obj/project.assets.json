@@ -230,6 +230,33 @@
         "runtime": {
           "bin/placeholder/KlantenSim_BL.dll": {}
         }
+      },
+      "KlantenSim_DL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "KlantenSim_BL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KlantenSim_DL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KlantenSim_DL.dll": {}
+        }
+      },
+      "KlantenSim_Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "KlantenSim_BL": "1.0.0",
+          "KlantenSim_DL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KlantenSim_Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KlantenSim_Utils.dll": {}
+        }
       }
     }
   },
@@ -610,11 +637,22 @@
       "type": "project",
       "path": "../KlantenSimBL/KlantenSim_BL.csproj",
       "msbuildProject": "../KlantenSimBL/KlantenSim_BL.csproj"
+    },
+    "KlantenSim_DL/1.0.0": {
+      "type": "project",
+      "path": "../KlantenSimDL/KlantenSim_DL.csproj",
+      "msbuildProject": "../KlantenSimDL/KlantenSim_DL.csproj"
+    },
+    "KlantenSim_Utils/1.0.0": {
+      "type": "project",
+      "path": "../KlantenSim_Utils/KlantenSim_Utils.csproj",
+      "msbuildProject": "../KlantenSim_Utils/KlantenSim_Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "KlantenSim_BL >= 1.0.0",
+      "KlantenSim_Utils >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 10.0.1",
       "Microsoft.Extensions.Configuration.FileExtensions >= 10.0.1",
       "Microsoft.Extensions.Configuration.Json >= 10.0.1"
@@ -654,6 +692,9 @@
           "projectReferences": {
             "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\KlantenSim_BL.csproj": {
               "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\KlantenSim_BL.csproj"
+            },
+            "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj": {
+              "projectPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj"
             }
           }
         }
