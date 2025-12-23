@@ -8,17 +8,17 @@ namespace KlantenSim_BL.Model
 {
     public class Adres
     {
-        public Adres(string gemeente, string straat, string huisnummer)
+        public Adres(string gemeente, string straat, string highwaytype)
         {
             Gemeente = gemeente;
             Straat = straat;
-            Huisnummer = huisnummer;
+            HighwayType = highwaytype;
         }
 
         public string Gemeente { get; set; }
 
         public string Straat { get; set; }
 
-        public string Huisnummer { get; set; }
+        public string HighwayType { get; set; }
     }
 }

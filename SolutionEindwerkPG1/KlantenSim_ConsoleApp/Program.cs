@@ -31,7 +31,7 @@ namespace KlantenSim_ConsoleApp
 
             BestandManager manager = new BestandManager(lezer);
 
-            manager.StartTest(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Denemarken\denmark_streets2.csv");
+            manager.StartTest(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Zweden\sweden_streets2.csv");
 
         }
     }

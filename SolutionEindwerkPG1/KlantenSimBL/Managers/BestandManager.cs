@@ -17,15 +17,20 @@ namespace KlantenSim_BL.Managers
             _adresLezer = adresLezer;
         }
 
+        // dit mag weg na het testen
         public void StartTest(string pad)
         {
             List<Adres> alleAdressen = _adresLezer.LeesAdressen(pad);
 
             Console.WriteLine($"{alleAdressen.Count()} adressen geladen");
 
+            int counter = 0;
             foreach (Adres a in alleAdressen)
             {
-                Console.WriteLine($"Found: {a.Gemeente}, {a.Straat}, {a.Huisnummer}");
+                Console.WriteLine($"Found: {a.Gemeente}, {a.Straat}, {a.HighwayType}");
+                counter++;
+
+                if (counter == 50) break;
             }
         }
     }

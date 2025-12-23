@@ -4,7 +4,7 @@ using KlantenSim_DL.DTOs;
 
 namespace KlantenSim_DL
 {
-    public class AdresLezer : IAdresLezer
+    public class CsvAdresLezer : IAdresLezer
     {
         public List<Adres> LeesAdressen(string pad)
         {
@@ -31,6 +31,9 @@ namespace KlantenSim_DL
         {
             List<AdresDTO> dtos = new();
 
+            string folderPath = Path.GetDirectoryName(pad);
+            string country = new DirectoryInfo(folderPath).Name;
+
             // check if file exists
             if (!File.Exists(pad))
             {
@@ -40,7 +43,6 @@ namespace KlantenSim_DL
             // effectief lezen van het bestand
             using (StreamReader sr = new StreamReader(pad))
             {
-                // skip first line (header)
                 sr.ReadLine();
 
                 string line;
@@ -55,14 +57,36 @@ namespace KlantenSim_DL
 
                     string[] parts = line.Split(';');
 
-                    AdresDTO dto = new AdresDTO
-                    (
-                        parts[0].Trim(), // municipality
-                        parts[1].Trim(), // street
-                        parts[2].Trim() // HighwayType
-                    );
+                    string mun = parts[0].Trim();
+                    string street = parts[1].Trim();
+                    string htype = parts[2].Trim();
 
-                    dtos.Add(dto);   
+                    
+                    if (country.Equals("Denemarken", StringComparison.OrdinalIgnoreCase))
+                    {
+                        // Rule: Remove "Kommune"
+                        if (mun.EndsWith("Kommune", StringComparison.OrdinalIgnoreCase))
+                        {
+                            mun = mun.Substring(0, mun.Length - "Kommune".Length).Trim();
+                        }
+                    }
+
+                    if (country.Equals("Zweden", StringComparison.OrdinalIgnoreCase))
+                    {
+                        // Rule: Remove "Kommun"
+                        if (mun.EndsWith("kommun", StringComparison.OrdinalIgnoreCase))
+                        {
+                            mun = mun.Substring(0, mun.Length - "kommun".Length).Trim();
+                        }
+                    }
+
+                    // (unknown) wegwerken uit de lijst
+                    if (mun.Equals("(unknown)", StringComparison.OrdinalIgnoreCase))
+                    {
+                        mun = null;
+                    }
+
+                    dtos.Add(new AdresDTO(mun, street, htype));   
                 }
             }
             return dtos;

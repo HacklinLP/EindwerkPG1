@@ -8,7 +8,7 @@ namespace KlantenSim_Utils
     {
         public static IAdresLezer MaakLezer()
         {
-            return new AdresLezer();
+            return new CsvAdresLezer();
         }
     }
 }
