@@ -11,7 +11,7 @@ namespace KlantenSim_Utils
             return new TxtAdresLezer();
         }
 
-        public static INamenLezer MaakTxtNamenLezer()
+        public static INaamLezer MaakTxtNamenLezer()
         {
             return new TxtNamenLezer();
         }

@@ -11,26 +11,46 @@ namespace KlantenSim_BL.Managers
     public class BestandManager
     {
         private readonly IAdresLezer _adresLezer;
+        private readonly INaamLezer _namenLezer;
 
-        public BestandManager(IAdresLezer adresLezer)
+        public BestandManager(IAdresLezer adresLezer, INaamLezer namenLezer)
         {
             _adresLezer = adresLezer;
+            _namenLezer = namenLezer;
         }
 
         // dit mag weg na het testen
-        public void StartTest(string pad)
+        public void StartTestAdres(string pad)
         {
+            //adres
             List<Adres> alleAdressen = _adresLezer.LeesAdressen(pad);
 
             Console.WriteLine($"{alleAdressen.Count()} adressen geladen");
 
-            int counter = 0;
+            int adresCounter = 0;
             foreach (Adres a in alleAdressen)
             {
                 Console.WriteLine($"Found: {a.Gemeente}, {a.Straat}, {a.HighwayType}");
-                counter++;
+                adresCounter++;
 
-                if (counter == 50) break;
+                if (adresCounter == 5) break;
+            }
+        }
+
+        public void StartTestNaam(string pad)
+        {
+            //naam
+            List<Naam> alleNamen = _namenLezer.LeesNamen(pad);
+
+            Console.WriteLine($"{alleNamen.Count()} NAMEN GELADEN");
+
+            int namenCounter = 0;
+            foreach (Naam n in alleNamen)
+            {
+                Console.WriteLine($"Found: {n.ID}, {n.NaamValue}, {n.Frequency}");
+                namenCounter++;
+
+                if (namenCounter == 5) break;
             }
         }
     }

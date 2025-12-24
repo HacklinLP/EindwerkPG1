@@ -21,6 +21,6 @@ namespace KlantenSim_DL.DTOs
 
         public string HighwayType { get; set; }
 
-        
+
     }
 }

@@ -28,10 +28,13 @@ namespace KlantenSim_ConsoleApp
             //}
 
             IAdresLezer adresLezer = BestandLezerFactory.MaakTxtAdresLezer();
-            INamenLezer namenLezer = BestandLezerFactory.MaakTxtNamenLezer();
-            BestandManager manager = new BestandManager(adresLezer);
+            INaamLezer namenLezer = BestandLezerFactory.MaakTxtNamenLezer();
 
-            manager.StartTest(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Zweden\sweden_streets2.csv");
+            BestandManager manager = new BestandManager(adresLezer, namenLezer);
+            
+
+            manager.StartTestAdres(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Zweden\sweden_streets2.csv");
+            manager.StartTestNaam(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\België\Familienamen_2024_Belgie.csv");
 
         }
     }

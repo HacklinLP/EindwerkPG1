@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KlantenSim_BL.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace KlantenSim_BL.Interfaces
 {
-    internal interface INamenLezer
+    public interface INaamLezer
     {
+        List<Naam> LeesNamen(string pad);
     }
 }

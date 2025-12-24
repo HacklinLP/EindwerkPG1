@@ -3,60 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\csvadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\csvadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\jsonadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\jsonadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\dtos\\straatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\dtos\\straatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\dtos\\municipalitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\dtos\\municipalitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\managers\\bestandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\managers\\bestandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\factories\\adresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\factories\\adresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\dtos\\adresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\dtos\\adresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\municipality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\municipality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\adres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\adres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\interfaces\\iadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\interfaces\\iadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}|KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}|KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj|solutionrelative:klantensim_consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_utils\\klantensim_utils.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|solutionrelative:klantensim_utils\\klantensim_utils.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\txtnamenlezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\txtnamenlezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\interfaces\\inaamlezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\interfaces\\inaamlezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\interfaces\\iadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\interfaces\\iadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\naam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\naam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\dtos\\txtnaamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\dtos\\txtnaamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\txtadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\txtadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\jsonadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\jsonadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\dtos\\adresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\dtos\\adresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\adres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\adres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\municipality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\municipality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_utils\\bestandlezerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|solutionrelative:klantensim_utils\\bestandlezerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\klant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\klant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\factories\\adresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\factories\\adresfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_utils\\klantensim_utils.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|solutionrelative:klantensim_utils\\klantensim_utils.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,163 +82,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StraatDTO.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\StraatDTO.cs",
-              "RelativeDocumentMoniker": "KlantenSimDL\\DTOs\\StraatDTO.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\StraatDTO.cs",
-              "RelativeToolTip": "KlantenSimDL\\DTOs\\StraatDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T18:29:32.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MunicipalityDTO.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\MunicipalityDTO.cs",
-              "RelativeDocumentMoniker": "KlantenSimDL\\DTOs\\MunicipalityDTO.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\MunicipalityDTO.cs",
-              "RelativeToolTip": "KlantenSimDL\\DTOs\\MunicipalityDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T18:29:09.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Municipality.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Municipality.cs",
-              "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Municipality.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Municipality.cs",
-              "RelativeToolTip": "KlantenSimBL\\Model\\Municipality.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T18:28:33.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JsonAdresLezer.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\JsonAdresLezer.cs",
-              "RelativeDocumentMoniker": "KlantenSimDL\\JsonAdresLezer.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\JsonAdresLezer.cs",
-              "RelativeToolTip": "KlantenSimDL\\JsonAdresLezer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T18:05:35.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "KlantenSim_Utils",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj",
-              "RelativeDocumentMoniker": "KlantenSim_Utils\\KlantenSim_Utils.csproj",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj",
-              "RelativeToolTip": "KlantenSim_Utils\\KlantenSim_Utils.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-23T15:28:39.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Klant.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Klant.cs",
-              "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Klant.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Klant.cs",
-              "RelativeToolTip": "KlantenSimBL\\Model\\Klant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T14:42:12.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "AdresDTO.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\AdresDTO.cs",
               "RelativeDocumentMoniker": "KlantenSimDL\\DTOs\\AdresDTO.cs",
               "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\AdresDTO.cs",
               "RelativeToolTip": "KlantenSimDL\\DTOs\\AdresDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T15:03:36.53Z",
+              "WhenOpened": "2025-12-24T14:04:39.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BestandManager.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Managers\\BestandManager.cs",
-              "RelativeDocumentMoniker": "KlantenSimBL\\Managers\\BestandManager.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Managers\\BestandManager.cs",
-              "RelativeToolTip": "KlantenSimBL\\Managers\\BestandManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "TxtNaamDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\TxtNaamDTO.cs",
+              "RelativeDocumentMoniker": "KlantenSimDL\\DTOs\\TxtNaamDTO.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\DTOs\\TxtNaamDTO.cs",
+              "RelativeToolTip": "KlantenSimDL\\DTOs\\TxtNaamDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T15:00:12.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "KlantenSim_ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\Program.cs",
-              "RelativeToolTip": "KlantenSim_ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T14:53:50.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BestandLezerFactory.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\BestandLezerFactory.cs",
-              "RelativeDocumentMoniker": "KlantenSim_Utils\\BestandLezerFactory.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\BestandLezerFactory.cs",
-              "RelativeToolTip": "KlantenSim_Utils\\BestandLezerFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T14:52:41.988Z",
+              "WhenOpened": "2025-12-24T13:32:40.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AdresFactory.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Factories\\AdresFactory.cs",
-              "RelativeDocumentMoniker": "KlantenSimBL\\Factories\\AdresFactory.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Factories\\AdresFactory.cs",
-              "RelativeToolTip": "KlantenSimBL\\Factories\\AdresFactory.cs",
+              "Title": "Naam.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Naam.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Naam.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Naam.cs",
+              "RelativeToolTip": "KlantenSimBL\\Model\\Naam.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T14:36:56.487Z",
+              "WhenOpened": "2025-12-24T13:29:13.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CsvAdresLezer.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\CsvAdresLezer.cs",
-              "RelativeDocumentMoniker": "KlantenSimDL\\CsvAdresLezer.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\CsvAdresLezer.cs",
-              "RelativeToolTip": "KlantenSimDL\\CsvAdresLezer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "INaamLezer.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\INaamLezer.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Interfaces\\INaamLezer.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\INaamLezer.cs",
+              "RelativeToolTip": "KlantenSimBL\\Interfaces\\INaamLezer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T13:40:34.83Z",
+              "WhenOpened": "2025-12-24T12:55:08.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
+              "Title": "TxtNamenLezer.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\TxtNamenLezer.cs",
+              "RelativeDocumentMoniker": "KlantenSimDL\\TxtNamenLezer.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\TxtNamenLezer.cs",
+              "RelativeToolTip": "KlantenSimDL\\TxtNamenLezer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIBAwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T12:52:36.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IAdresLezer.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\IAdresLezer.cs",
               "RelativeDocumentMoniker": "KlantenSimBL\\Interfaces\\IAdresLezer.cs",
@@ -247,16 +160,118 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TxtAdresLezer.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\TxtAdresLezer.cs",
+              "RelativeDocumentMoniker": "KlantenSimDL\\TxtAdresLezer.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\TxtAdresLezer.cs",
+              "RelativeToolTip": "KlantenSimDL\\TxtAdresLezer.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:40:34.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "JsonAdresLezer.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\JsonAdresLezer.cs",
+              "RelativeDocumentMoniker": "KlantenSimDL\\JsonAdresLezer.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\JsonAdresLezer.cs",
+              "RelativeToolTip": "KlantenSimDL\\JsonAdresLezer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:05:35.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Adres.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Adres.cs",
               "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Adres.cs",
               "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Adres.cs",
               "RelativeToolTip": "KlantenSimBL\\Model\\Adres.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T13:27:29.969Z",
+              "WhenOpened": "2025-12-23T14:42:12.616Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Municipality.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Municipality.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Municipality.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Municipality.cs",
+              "RelativeToolTip": "KlantenSimBL\\Model\\Municipality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:28:33.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BestandManager.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Managers\\BestandManager.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Managers\\BestandManager.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Managers\\BestandManager.cs*",
+              "RelativeToolTip": "KlantenSimBL\\Managers\\BestandManager.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T15:00:12.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "KlantenSim_ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\Program.cs",
+              "RelativeToolTip": "KlantenSim_ConsoleApp\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCQAAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T14:53:50.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BestandLezerFactory.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\BestandLezerFactory.cs",
+              "RelativeDocumentMoniker": "KlantenSim_Utils\\BestandLezerFactory.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\BestandLezerFactory.cs",
+              "RelativeToolTip": "KlantenSim_Utils\\BestandLezerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T14:52:41.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "KlantenSim_Utils.csproj",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj",
+              "RelativeDocumentMoniker": "KlantenSim_Utils\\KlantenSim_Utils.csproj",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_Utils\\KlantenSim_Utils.csproj",
+              "RelativeToolTip": "KlantenSim_Utils\\KlantenSim_Utils.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-23T15:28:39.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdresFactory.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Factories\\AdresFactory.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Factories\\AdresFactory.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Factories\\AdresFactory.cs",
+              "RelativeToolTip": "KlantenSimBL\\Factories\\AdresFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T14:36:56.487Z"
             }
           ]
         }
