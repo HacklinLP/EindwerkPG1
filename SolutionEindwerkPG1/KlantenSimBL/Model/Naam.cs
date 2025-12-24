@@ -15,7 +15,7 @@ namespace KlantenSim_BL.Model
             Frequency = frequency;
         }
 
-        public int? ID { get; set; }
+        public double? ID { get; set; }
         public string NaamValue { get; set; }
         public int? Frequency { get; set; }
     }

@@ -25,7 +25,7 @@ namespace KlantenSim_BL.Managers
             //adres
             List<Adres> alleAdressen = _adresLezer.LeesAdressen(pad);
 
-            Console.WriteLine($"{alleAdressen.Count()} adressen geladen");
+            Console.WriteLine($"{alleAdressen.Count()} ADRESSEN GELADEN");
 
             int adresCounter = 0;
             foreach (Adres a in alleAdressen)
@@ -42,7 +42,7 @@ namespace KlantenSim_BL.Managers
             //naam
             List<Naam> alleNamen = _namenLezer.LeesNamen(pad);
 
-            Console.WriteLine($"{alleNamen.Count()} NAMEN GELADEN");
+            Console.WriteLine($"\n{alleNamen.Count()} NAMEN GELADEN");
 
             int namenCounter = 0;
             foreach (Naam n in alleNamen)

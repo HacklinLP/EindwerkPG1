@@ -85,7 +85,66 @@ namespace KlantenSim_DL
                     }
 
                 }
-                
+
+                if (country == "Denemarken")
+                {
+                    for (int i = 0;  i < 5; i++)
+                    {
+                        sr.ReadLine();
+                    }
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (string.IsNullOrWhiteSpace(line))
+                        {
+                            continue;
+                        }
+
+                        string[] parts = line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+
+                        string Name = parts[0].Trim();
+
+                        int tempFrequency;
+                        int? Frequency = null;
+                        if (int.TryParse(parts[1], out tempFrequency))
+                        {
+                            // If it works, assign the value to your nullable ID
+                            Frequency = tempFrequency;
+                        }
+
+
+                        dtos.Add(new TxtNaamDTO(null, Name, Frequency));
+                    }
+                }
+
+                if (country == "Finland")
+                {
+                    sr.ReadLine();
+
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (string.IsNullOrWhiteSpace(line))
+                        {
+                            continue;
+                        }
+
+                        string[] parts = line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+
+                        string Name = parts[0].Trim();
+
+                        int tempFrequency;
+                        int? Frequency = null;
+                        if (int.TryParse(parts[1], out tempFrequency))
+                        {
+                            // If it works, assign the value to your nullable ID
+                            Frequency = tempFrequency;
+                        }
+
+
+                        dtos.Add(new TxtNaamDTO(null, Name, Frequency));
+                    }
+                }
             }
             return dtos;
 
