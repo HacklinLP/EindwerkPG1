@@ -27,9 +27,9 @@ namespace KlantenSim_ConsoleApp
             //    return;
             //}
 
-            IAdresLezer lezer = BestandLezerFactory.MaakLezer();
-
-            BestandManager manager = new BestandManager(lezer);
+            IAdresLezer adresLezer = BestandLezerFactory.MaakTxtAdresLezer();
+            INamenLezer namenLezer = BestandLezerFactory.MaakTxtNamenLezer();
+            BestandManager manager = new BestandManager(adresLezer);
 
             manager.StartTest(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Zweden\sweden_streets2.csv");
 

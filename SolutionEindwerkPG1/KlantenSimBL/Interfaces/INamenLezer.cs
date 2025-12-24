@@ -1,13 +1,12 @@
-﻿using KlantenSim_BL.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KlantenSim_DL
+namespace KlantenSim_BL.Interfaces
 {
-    public class TxtNamenLezer : INamenLezer
+    internal interface INamenLezer
     {
     }
 }

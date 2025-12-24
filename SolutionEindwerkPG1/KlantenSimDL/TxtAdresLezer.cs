@@ -4,7 +4,7 @@ using KlantenSim_DL.DTOs;
 
 namespace KlantenSim_DL
 {
-    public class CsvAdresLezer : IAdresLezer
+    public class TxtAdresLezer : IAdresLezer
     {
         public List<Adres> LeesAdressen(string pad)
         {

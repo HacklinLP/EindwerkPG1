@@ -6,9 +6,14 @@ namespace KlantenSim_Utils
 {
     public static class BestandLezerFactory
     {
-        public static IAdresLezer MaakLezer()
+        public static IAdresLezer MaakTxtAdresLezer()
         {
-            return new CsvAdresLezer();
+            return new TxtAdresLezer();
+        }
+
+        public static INamenLezer MaakTxtNamenLezer()
+        {
+            return new TxtNamenLezer();
         }
     }
 }
