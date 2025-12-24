@@ -72,9 +72,9 @@ namespace KlantenSim_DL
 
                         string Name = parts[1].Trim();
 
-                        int tempFrequency;
-                        int? Frequency = null;
-                        if (int.TryParse(parts[2], out tempFrequency))
+                        double tempFrequency;
+                        double? Frequency = null;
+                        if (double.TryParse(parts[2], out tempFrequency))
                         {
                             // If it works, assign the value to your nullable ID
                             Frequency = tempFrequency;
@@ -104,9 +104,9 @@ namespace KlantenSim_DL
 
                         string Name = parts[0].Trim();
 
-                        int tempFrequency;
-                        int? Frequency = null;
-                        if (int.TryParse(parts[1], out tempFrequency))
+                        double tempFrequency;
+                        double? Frequency = null;
+                        if (double.TryParse(parts[1], out tempFrequency))
                         {
                             // If it works, assign the value to your nullable ID
                             Frequency = tempFrequency;
@@ -133,9 +133,9 @@ namespace KlantenSim_DL
 
                         string Name = parts[0].Trim();
 
-                        int tempFrequency;
-                        int? Frequency = null;
-                        if (int.TryParse(parts[1], out tempFrequency))
+                        double tempFrequency;
+                        double? Frequency = null;
+                        if (double.TryParse(parts[1], out tempFrequency))
                         {
                             // If it works, assign the value to your nullable ID
                             Frequency = tempFrequency;

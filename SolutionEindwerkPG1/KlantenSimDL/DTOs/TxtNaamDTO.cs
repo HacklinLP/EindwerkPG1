@@ -8,7 +8,7 @@ namespace KlantenSim_DL.DTOs
 {
     public class TxtNaamDTO
     {
-        public TxtNaamDTO(int? id, string value, int? frequency)
+        public TxtNaamDTO(int? id, string value, double? frequency)
         {
             Id = id;
             Value = value;
@@ -17,6 +17,6 @@ namespace KlantenSim_DL.DTOs
 
         public int? Id { get; set; }
         public string Value { get; set; }
-        public int? Frequency { get; set; }
+        public double? Frequency { get; set; }
     }
 }
