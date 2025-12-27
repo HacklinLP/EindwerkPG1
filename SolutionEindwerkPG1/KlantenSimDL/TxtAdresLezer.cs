@@ -1,68 +1,101 @@
 ﻿using KlantenSim_BL.Interfaces;
 using KlantenSim_BL.Model;
 using KlantenSim_DL.DTOs;
+using System.IO;
 
 namespace KlantenSim_DL
 {
     public class TxtAdresLezer : IAdresLezer
     {
-        public List<Adres> LeesAdressen(string pad)
-        {
-            List<AdresDTO> rawData = ReadFile(pad);
+        //public List<Adres> LeesAdressen(string pad)
+        //{
+        //    List<Gemeente> rawData = ReadFile(pad);
 
-            return ConvertToAdres(rawData);
+        //    return ConvertToAdres(rawData);
 
             
-        }
+        //}
 
-        private List<Adres> ConvertToAdres(List<AdresDTO> data)
+        //private List<Adres> ConvertToAdres(List<Gemeente> data)
+        //{
+        //    List<Adres> adressen = new();
+
+        //    foreach (Gemeente dto in data)
+        //    {
+        //        Adres adres = new Adres(dto.Municipality, dto.Street, dto.HighwayType);
+        //        adressen.Add(adres);
+        //    }
+        //    return adressen;
+        //}
+
+        public List<Gemeente> LeesAdressen(string pad)
         {
-            List<Adres> adressen = new();
+            List<Gemeente> gemeentes = new();
 
-            foreach (AdresDTO dto in data)
-            {
-                Adres adres = new Adres(dto.Municipality, dto.Street, dto.HighwayType);
-                adressen.Add(adres);
-            }
-            return adressen;
-        }
+            string[] allowedTypes = { "residential" };
 
-        private List<AdresDTO> ReadFile(string pad)
-        {
-            List<AdresDTO> dtos = new();
+            Dictionary<string, Gemeente> gemeenteDict = new();
 
-            string folderPath = Path.GetDirectoryName(pad);
-            string country = new DirectoryInfo(folderPath).Name;
+            int gemeenteId = 0;
+            int straatId = 0;
 
-            // check if file exists
+            //string folderPath = Path.GetDirectoryName(pad);
+            //string country = new DirectoryInfo(folderPath).Name;
+
+            
             if (!File.Exists(pad))
             {
-                return dtos;
+                return null;
             }
 
-            // effectief lezen van het bestand
+            
             using (StreamReader sr = new StreamReader(pad))
             {
                 sr.ReadLine();
-
                 string line;
-
+                int linesread = 0;
+                int streetsadded = 0;
                 // lees tot het einde van de lijn/row
                 while ((line = sr.ReadLine()) != null)
                 {
-                    if (string.IsNullOrWhiteSpace(line)) // kleine check of er wel iets in staat
+                    linesread++;
+                    if (string.IsNullOrWhiteSpace(line))
                     {
                         continue;
                     }
 
                     string[] parts = line.Split(';');
 
-                    string mun = parts[0].Trim();
-                    string street = parts[1].Trim();
-                    string htype = parts[2].Trim();
+                    string gemeenteNaam = parts[0].Trim();
+                    string straatNaam = parts[1].Trim();
+                    string highwayType = parts[2].Trim();
 
-                    
-                    if (country.Equals("Denemarken", StringComparison.OrdinalIgnoreCase))
+                    if (!allowedTypes.Contains(highwayType))
+                    {
+                        continue;
+                    }
+
+                    Gemeente huidigeLijnGemeente;
+                    if (!gemeenteDict.ContainsKey(gemeenteNaam))
+                    {
+                        gemeenteId++;
+                        huidigeLijnGemeente = new Gemeente(gemeenteId, gemeenteNaam);
+
+                        huidigeLijnGemeente.Straten = new List<Straat>();
+
+                        gemeentes.Add(huidigeLijnGemeente);
+                        gemeenteDict.Add(gemeenteNaam, huidigeLijnGemeente);
+                    }
+                    else
+                    {
+                        huidigeLijnGemeente = gemeenteDict[gemeenteNaam];
+                    }
+
+                    straatId++;
+                    Straat straat = new Straat(straatId, straatNaam, huidigeLijnGemeente.Id);
+                    huidigeLijnGemeente.Straten.Add(straat);
+                    streetsadded++;
+                    /*if (country.Equals("Denemarken", StringComparison.OrdinalIgnoreCase))
                     {
                         // Rule: Remove "Kommune"
                         if (mun.EndsWith("Kommune", StringComparison.OrdinalIgnoreCase))
@@ -80,16 +113,15 @@ namespace KlantenSim_DL
                         }
                     }
 
-                    // (unknown) wegwerken uit de lijst
                     if (mun.Equals("(unknown)", StringComparison.OrdinalIgnoreCase))
                     {
                         mun = null;
-                    }
-
-                    dtos.Add(new AdresDTO(mun, street, htype));   
+                    }*/
+                    //dtos.Add(new Gemeente(mun, street, htype));   
                 }
+                Console.WriteLine($"DEBUG: Read {linesread} lines. Added {streetsadded} streets.");
             }
-            return dtos;
+            return gemeentes;
         }
     }
 }

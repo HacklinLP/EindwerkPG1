@@ -23,14 +23,14 @@ namespace KlantenSim_BL.Managers
         public void StartTestAdres(string pad)
         {
             //adres
-            List<Adres> alleAdressen = _adresLezer.LeesAdressen(pad);
+            List<Gemeente> alleAdressen = _adresLezer.LeesAdressen(pad);
 
             Console.WriteLine($"{alleAdressen.Count()} ADRESSEN GELADEN");
 
             int adresCounter = 0;
-            foreach (Adres a in alleAdressen)
+            foreach (Gemeente g in alleAdressen)
             {
-                Console.WriteLine($"Found: {a.Gemeente}, {a.Straat}, {a.HighwayType}");
+                Console.WriteLine($"Found: {g.Id}, {g.Naam}, {g.Straten.Count()}");
                 adresCounter++;
 
                 if (adresCounter == 5) break;

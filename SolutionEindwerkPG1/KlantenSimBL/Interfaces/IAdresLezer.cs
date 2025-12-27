@@ -9,6 +9,6 @@ namespace KlantenSim_BL.Interfaces
 {
     public interface IAdresLezer
     {
-        List<Adres> LeesAdressen(string pad);
+        List<Gemeente> LeesAdressen(string pad);
     }
 }
