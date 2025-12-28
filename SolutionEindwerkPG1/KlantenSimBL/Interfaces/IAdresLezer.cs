@@ -10,6 +10,6 @@ namespace KlantenSim_BL.Interfaces
 {
     public interface IAdresLezer
     {
-        List<Gemeente> LeesAdressen(string pad, AdresInstellingen instellingen);
+        List<Gemeente> LeesAdressen(string pad, AdresInstellingen instellingen, int versieId);
     }
 }
