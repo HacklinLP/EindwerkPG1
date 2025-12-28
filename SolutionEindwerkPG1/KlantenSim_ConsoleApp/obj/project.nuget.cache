@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DkmQ4KWBPRI=",
+  "dgSpecHash": "w+MotnCxxkY=",
   "success": true,
   "projectFilePath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.1\\microsoft.extensions.configuration.10.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.1\\microsoft.extensions.configuration.abstractions.10.0.1.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.1\\microsoft.extensions.configuration.binder.10.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.1\\microsoft.extensions.configuration.fileextensions.10.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.1\\microsoft.extensions.configuration.json.10.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.1\\microsoft.extensions.fileproviders.abstractions.10.0.1.nupkg.sha512",

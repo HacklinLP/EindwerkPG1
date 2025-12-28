@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KlantenSim_UI_ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86166546db272a08990951d14bef380a4672df74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+205c9a1b1040e957a5c22830cc3e33edf0c37a9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("KlantenSim_UI_ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KlantenSim_UI_ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

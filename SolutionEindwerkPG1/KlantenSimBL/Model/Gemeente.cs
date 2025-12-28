@@ -14,6 +14,13 @@ namespace KlantenSim_BL.Model
             Naam = naam;
         }
 
+        public Gemeente(int id, string naam, List<Straat> straten)
+        {
+            Id = id;
+            Naam = naam;
+            Straten = straten;
+        }
+
         public int Id { get; set; }
         public string Naam { get; set; }
         public List<Straat> Straten { get; set; }
