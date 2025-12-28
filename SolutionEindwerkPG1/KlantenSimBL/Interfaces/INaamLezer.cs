@@ -1,4 +1,5 @@
-﻿using KlantenSim_BL.Model;
+﻿using KlantenSim_BL.Config;
+using KlantenSim_BL.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace KlantenSim_BL.Interfaces
 {
     public interface INaamLezer
     {
-        List<Naam> LeesNamen(string pad);
+        List<Voornaam> LeesVoorNamen(BestandenConfig bestand, VoornaamInstellingen instellingen, int versieId);
     }
 }

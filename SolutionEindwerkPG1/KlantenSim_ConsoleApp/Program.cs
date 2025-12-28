@@ -24,11 +24,14 @@ namespace KlantenSim_ConsoleApp
 
 
             IAdresLezer adresLezer = BestandLezerFactory.MaakTxtAdresLezer();
-            INaamLezer namenLezer = BestandLezerFactory.MaakTxtNamenLezer();
+            INaamLezer naamLezer = BestandLezerFactory.MaakTxtNamenLezer();
 
-            AdresManager manager = new AdresManager(landenConfig, adresLezer);
+            AdresManager adresManager = new AdresManager(landenConfig, adresLezer);
+            NaamManager naamManager = new NaamManager(landenConfig, naamLezer);
 
-            manager.VerwerkAlleAdressen(landenConfig);
+            //adresManager.VerwerkAlleAdressen(landenConfig);
+
+            naamManager.VerwerkAlleVoornamen(landenConfig);
             
             //manager.StartTestNaam(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Denemarken\efternavne 2025 (3+) - med overskrifter.txt");
             //manager.StartTestNaam(@"C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\Data\Finland\etunimitilasto-2025-08-13-dvv_miehet_ens.txt");

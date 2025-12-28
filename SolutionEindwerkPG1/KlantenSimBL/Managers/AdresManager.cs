@@ -31,34 +31,14 @@ namespace KlantenSim_BL.Managers
                 foreach (var versie in land.Value.Versie)
                 {
                     var instellingen = versie.Value.AdresInstellingen;
+                    int huidigeVersieId = int.Parse(versie.Key);
 
                     if (instellingen != null && !string.IsNullOrEmpty(instellingen.Pad))
                     {
                         // Roep de reader aan met het juiste pad en de bijbehorende regels
-                        List<Gemeente> gemeentes = _adresLezer.LeesAdressen(instellingen.Pad, instellingen);
+                        List<Gemeente> gemeentes = _adresLezer.LeesAdressen(instellingen.Pad, instellingen, huidigeVersieId);
 
-                        // --- Testing Output ---
-                        Console.WriteLine($"\n[TEST] Gevonden resultaten voor pad: {instellingen.Pad}");
-                        Console.WriteLine($"Totaal aantal gemeentes: {gemeentes.Count}");
-
-                        foreach (var g in gemeentes)
-                        {
-                            Console.WriteLine($"\nGemeente: {g.Naam} (ID: {g.Id})");
-                            Console.WriteLine($"Aantal straten: {g.Straten.Count}");
-
-                            // Print the first 5 streets as a sample to avoid flooding the console
-                            var streetSample = g.Straten.Take(5).ToList();
-                            foreach (var s in streetSample)
-                            {
-                                Console.WriteLine($"  - Straat: {s.Naam} (G_ID: {s.GemeenteId})");
-                            }
-
-                            if (g.Straten.Count > 5)
-                            {
-                                Console.WriteLine($"  ... en nog {g.Straten.Count - 5} andere straten.");
-                            }
-                        }
-                        Console.WriteLine("\n--------------------------------------------------\n");
+                        Console.WriteLine($"Klaar met lezen: {land.Key} (v{versie.Key}). Totaal aantal gemeentes gevonden: {gemeentes.Count}");
 
                     }
                 }

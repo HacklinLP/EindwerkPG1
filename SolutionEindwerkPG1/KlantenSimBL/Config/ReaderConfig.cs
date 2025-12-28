@@ -33,6 +33,7 @@ namespace KlantenSim_BL.Config
         public int SkipLines { get; set; }
         public int NaamIndex { get; set; }
         public int FrequencyIndex { get; set; }
+        public string Separator { get; set; }
     }
     public class BestandenConfig
     {
