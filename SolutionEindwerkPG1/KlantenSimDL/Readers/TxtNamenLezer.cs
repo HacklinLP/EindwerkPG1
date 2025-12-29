@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace KlantenSim_DL
+namespace KlantenSim_DL.Readers
 {
     public class TxtNamenLezer : INaamLezer
     {

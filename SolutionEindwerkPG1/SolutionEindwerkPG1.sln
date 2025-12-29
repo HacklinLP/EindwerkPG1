@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlantenSim_UI_ConsoleApp", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlantenSim_Utils", "KlantenSim_Utils\KlantenSim_Utils.csproj", "{C7A76842-4B5C-436E-92D9-BED45C4187F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlantenSim_DL_SQL", "KlantenSim_DL_SQL\KlantenSim_DL_SQL.csproj", "{7BE54FCA-0C72-4624-8D41-A463A4690B0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C7A76842-4B5C-436E-92D9-BED45C4187F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7A76842-4B5C-436E-92D9-BED45C4187F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7A76842-4B5C-436E-92D9-BED45C4187F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE54FCA-0C72-4624-8D41-A463A4690B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE54FCA-0C72-4624-8D41-A463A4690B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE54FCA-0C72-4624-8D41-A463A4690B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE54FCA-0C72-4624-8D41-A463A4690B0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

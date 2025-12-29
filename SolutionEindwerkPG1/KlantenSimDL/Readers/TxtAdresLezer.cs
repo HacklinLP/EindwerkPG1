@@ -4,7 +4,7 @@ using KlantenSim_BL.Model;
 using KlantenSim_DL.DTOs;
 using System.IO;
 
-namespace KlantenSim_DL
+namespace KlantenSim_DL.Readers
 {
     public class TxtAdresLezer : IAdresLezer
     {

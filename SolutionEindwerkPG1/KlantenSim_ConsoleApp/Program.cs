@@ -29,10 +29,10 @@ namespace KlantenSim_ConsoleApp
             AdresManager adresManager = new AdresManager(landenConfig, adresLezer);
             NaamManager naamManager = new NaamManager(landenConfig, naamLezer);
 
-            //adresManager.VerwerkAlleAdressen(landenConfig);
+            adresManager.VerwerkAlleAdressen(landenConfig);
 
             //naamManager.VerwerkAlleVoornamen(landenConfig);
-            naamManager.VerwerkAlleAchternamen(landenConfig);
+            //naamManager.VerwerkAlleAchternamen(landenConfig);
 
         }
     }
