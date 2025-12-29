@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\KlantenSimBL\KlantenSim_BL.csproj" />
     <ProjectReference Include="..\KlantenSimDL\KlantenSim_DL.csproj" />
+    <ProjectReference Include="..\KlantenSim_DL_SQL\KlantenSim_DL_SQL.csproj" />
   </ItemGroup>
 
 </Project>

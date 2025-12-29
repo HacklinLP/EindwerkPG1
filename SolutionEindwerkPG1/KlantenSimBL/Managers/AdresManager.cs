@@ -17,10 +17,11 @@ namespace KlantenSim_BL.Managers
         private readonly IAdresLezer _adresLezer;
         private readonly IAdresRepository _adresRepository;
 
-        public AdresManager(Dictionary<string, LandConfig> configData, IAdresLezer adresLezer)
+        public AdresManager(Dictionary<string, LandConfig> configData, IAdresLezer adresLezer, IAdresRepository adresRepository)
         {
             _adresLezer = adresLezer;
             _landenConfig = configData;
+            _adresRepository = adresRepository;
         }
 
         public void VerwerkAlleAdressen(Dictionary<string, LandConfig> landen)
@@ -41,8 +42,8 @@ namespace KlantenSim_BL.Managers
 
                         Console.WriteLine($"Klaar met lezen: {land.Key} (v{versie.Key}). Totaal aantal gemeentes gevonden: {gemeentes.Count}");
 
-
-                        _adresRepository.VoegAdresToe(land.Key.ToString(), int.Parse(versie.Key.ToString()), gemeentes);
+                        
+                        _adresRepository.VoegAdresToe(land.Key.ToString(), versie.Key.ToString(), gemeentes);
                         
                     }
                 }

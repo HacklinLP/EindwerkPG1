@@ -1,0 +1,115 @@
+USE [KlantenSimulator]
+GO
+/****** Object:  Table [dbo].[Achternaam]    Script Date: 12/29/2025 8:23:01 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Achternaam](
+	[id] [int] NOT NULL,
+	[versieid] [int] NOT NULL,
+	[naam] [nvarchar](50) NOT NULL,
+	[frequency] [nvarchar](50) NULL,
+ CONSTRAINT [PK_Achternaam] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Gemeente]    Script Date: 12/29/2025 8:23:01 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Gemeente](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[versieid] [int] NOT NULL,
+	[naam] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Gemeente] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Land]    Script Date: 12/29/2025 8:23:01 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Land](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[naam] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Land] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Straat]    Script Date: 12/29/2025 8:23:01 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Straat](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[versieid] [int] NOT NULL,
+	[gemeenteid] [int] NULL,
+	[naam] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Straat] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Versie]    Script Date: 12/29/2025 8:23:01 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Versie](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[landenid] [int] NOT NULL,
+	[versie] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Versie] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Voornaam]    Script Date: 12/29/2025 8:23:01 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Voornaam](
+	[id] [int] NOT NULL,
+	[versieid] [int] NOT NULL,
+	[naam] [nvarchar](50) NOT NULL,
+	[gender] [nvarchar](50) NULL,
+	[frequency] [nvarchar](50) NULL,
+ CONSTRAINT [PK_Voornaam] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Gemeente]  WITH CHECK ADD  CONSTRAINT [FK_Gemeente_Versie] FOREIGN KEY([versieid])
+REFERENCES [dbo].[Versie] ([id])
+GO
+ALTER TABLE [dbo].[Gemeente] CHECK CONSTRAINT [FK_Gemeente_Versie]
+GO
+ALTER TABLE [dbo].[Straat]  WITH CHECK ADD  CONSTRAINT [FK_Straat_Gemeente] FOREIGN KEY([gemeenteid])
+REFERENCES [dbo].[Gemeente] ([id])
+GO
+ALTER TABLE [dbo].[Straat] CHECK CONSTRAINT [FK_Straat_Gemeente]
+GO
+ALTER TABLE [dbo].[Straat]  WITH CHECK ADD  CONSTRAINT [FK_Straat_Versie] FOREIGN KEY([versieid])
+REFERENCES [dbo].[Versie] ([id])
+GO
+ALTER TABLE [dbo].[Straat] CHECK CONSTRAINT [FK_Straat_Versie]
+GO
+ALTER TABLE [dbo].[Versie]  WITH CHECK ADD  CONSTRAINT [FK_Versie_Land] FOREIGN KEY([landenid])
+REFERENCES [dbo].[Land] ([id])
+GO
+ALTER TABLE [dbo].[Versie] CHECK CONSTRAINT [FK_Versie_Land]
+GO
