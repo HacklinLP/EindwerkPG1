@@ -14,6 +14,7 @@ namespace KlantenSim_BL.Config
     public class VersieInstellingen
     {
         public VoornaamInstellingen VoornaamInstellingen { get; set; }
+        public AchternaamInstellingen AchternaamInstellingen { get; set; }
         public AdresInstellingen AdresInstellingen { get; set; }
     }
     public class AdresInstellingen
@@ -28,6 +29,14 @@ namespace KlantenSim_BL.Config
         public List<string> ToegestaneMun { get; set; }
     }
     public class VoornaamInstellingen
+    {
+        public List<BestandenConfig> Bestanden { get; set; }
+        public int SkipLines { get; set; }
+        public int NaamIndex { get; set; }
+        public int FrequencyIndex { get; set; }
+        public string Separator { get; set; }
+    }
+    public class AchternaamInstellingen
     {
         public List<BestandenConfig> Bestanden { get; set; }
         public int SkipLines { get; set; }

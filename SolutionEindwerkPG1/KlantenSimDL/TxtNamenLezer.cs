@@ -16,7 +16,7 @@ namespace KlantenSim_DL
     public class TxtNamenLezer : INaamLezer
     {
 
-        public List<Voornaam> LeesVoorNamen(BestandenConfig bestand, VoornaamInstellingen instellingen, int versieId)
+        public List<Voornaam> LeesVoornamen(BestandenConfig bestand, VoornaamInstellingen instellingen, int versieId)
         {
             List<Voornaam> voornamen = new();
             int voornaamIdCounter = 1;
@@ -56,6 +56,48 @@ namespace KlantenSim_DL
             }
             return voornamen;
         }
+
+        public List<Achternaam> LeesAchternamen(BestandenConfig bestand, AchternaamInstellingen instellingen, int versieId)
+        {
+            List<Achternaam> achternamen = new();
+            int achternaamIdCounter = 1;
+
+            int frequencyIndex = bestand.FrequencyIndex ?? instellingen.FrequencyIndex;
+
+            using (StreamReader reader = new StreamReader(bestand.Pad))
+            {
+                // 1. Skip lines (headers)
+                for (int i = 0; i < instellingen.SkipLines; i++)
+                {
+                    reader.ReadLine();
+                }
+
+                while (!reader.EndOfStream)
+                {
+                    string line = reader.ReadLine();
+
+                    if (string.IsNullOrWhiteSpace(line))
+                    {
+                        continue; // in geval van lege lijn
+                    }
+
+                    string[] columns = line.Split(instellingen.Separator);
+
+                    // 2. Extract data using indices from JSON
+                    string achternaam = columns[instellingen.NaamIndex].Trim();
+                    string frequency = columns[frequencyIndex].Trim();
+
+                    double actualFrequency = 0;
+                    string cleanFreq = new string(frequency.Where(char.IsDigit).ToArray());
+                    double.TryParse(cleanFreq, out actualFrequency);
+
+                    achternamen.Add(new Achternaam(achternaamIdCounter, achternaam, actualFrequency, versieId));
+                }
+            }
+            return achternamen;
+        }
+
+
 
         //public List<Voornaam> LeesNamen(string pad)
         //{

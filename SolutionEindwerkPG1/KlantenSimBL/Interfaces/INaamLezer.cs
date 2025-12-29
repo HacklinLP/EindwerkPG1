@@ -10,6 +10,7 @@ namespace KlantenSim_BL.Interfaces
 {
     public interface INaamLezer
     {
-        List<Voornaam> LeesVoorNamen(BestandenConfig bestand, VoornaamInstellingen instellingen, int versieId);
+        List<Voornaam> LeesVoornamen(BestandenConfig bestand, VoornaamInstellingen instellingen, int versieId);
+        List<Achternaam> LeesAchternamen(BestandenConfig bestand, AchternaamInstellingen instellingen, int versieId);
     }
 }
