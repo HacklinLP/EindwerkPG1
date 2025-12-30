@@ -41,14 +41,14 @@ namespace KlantenSim_BL.Managers
 
                             // 3. Call your name reader (you'll likely pass the specific file settings)
                             // Note: You pass 'bestand' for the path/gender and 'instellingen' for the indices/separator
-                            List<Voornaam> namen = _naamLezer.LeesVoornamen(bestand, instellingen, huidigeVersieId);
+                            List<Voornaam> voornamen = _naamLezer.LeesVoornamen(bestand, instellingen, huidigeVersieId);
 
                             //Console.WriteLine($"Klaar! {namen.Count} voornamen gevonden voor {land.Key} ({bestand.Gender}).");
                             //for (int i = 0; i < 10; i++)
                             //{
                             //    Console.WriteLine($"{namen[i].Naam} | {namen[i].Gender}");
                             //}
-                            _naamRepository.VoegVoornaamToe(land.Key.ToString(), versie.Key.ToString(), namen);
+                            _naamRepository.VoegVoornaamToe(land.Key.ToString(), versie.Key.ToString(), voornamen);
                         }
                         
                     }
@@ -75,13 +75,14 @@ namespace KlantenSim_BL.Managers
 
                             // 3. Call your name reader (you'll likely pass the specific file settings)
                             // Note: You pass 'bestand' for the path/gender and 'instellingen' for the indices/separator
-                            var namen = _naamLezer.LeesAchternamen(bestand, instellingen, huidigeVersieId);
+                            List<Achternaam> achternamen = _naamLezer.LeesAchternamen(bestand, instellingen, huidigeVersieId);
 
-                            Console.WriteLine($"Klaar! {namen.Count} achternamen gevonden voor {land.Key}");
-                            for (int i = 0; i < 10; i++)
-                            {
-                                Console.WriteLine($"{namen[i].Naam} | {namen[i].Frequency}");
-                            }
+                            //Console.WriteLine($"Klaar! {namen.Count} achternamen gevonden voor {land.Key}");
+                            //for (int i = 0; i < 10; i++)
+                            //{
+                            //    Console.WriteLine($"{namen[i].Naam} | {namen[i].Frequency}");
+                            //}
+                            _naamRepository.VoegAchternaamToe(land.Key.ToString(), versie.Key.ToString(), achternamen);
                         }
 
                     }

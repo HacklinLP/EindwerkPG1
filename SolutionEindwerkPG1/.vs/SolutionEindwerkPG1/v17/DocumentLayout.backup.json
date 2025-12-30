@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\readers\\txtnamenlezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BE54FCA-0C72-4624-8D41-A463A4690B0D}|KlantenSim_DL_SQL\\KlantenSim_DL_SQL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_dl_sql\\adresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BE54FCA-0C72-4624-8D41-A463A4690B0D}|KlantenSim_DL_SQL\\KlantenSim_DL_SQL.csproj|solutionrelative:klantensim_dl_sql\\adresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BE54FCA-0C72-4624-8D41-A463A4690B0D}|KlantenSim_DL_SQL\\KlantenSim_DL_SQL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_dl_sql\\naamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BE54FCA-0C72-4624-8D41-A463A4690B0D}|KlantenSim_DL_SQL\\KlantenSim_DL_SQL.csproj|solutionrelative:klantensim_dl_sql\\naamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +15,16 @@
       "RelativeMoniker": "D:0:0:{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}|KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj|solutionrelative:klantensim_consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\interfaces\\inaamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\interfaces\\inaamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\managers\\naammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\managers\\naammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\gemeente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\gemeente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE54FCA-0C72-4624-8D41-A463A4690B0D}|KlantenSim_DL_SQL\\KlantenSim_DL_SQL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_dl_sql\\adresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE54FCA-0C72-4624-8D41-A463A4690B0D}|KlantenSim_DL_SQL\\KlantenSim_DL_SQL.csproj|solutionrelative:klantensim_dl_sql\\adresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\managers\\adresmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +33,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensim_utils\\bestandlezerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7A76842-4B5C-436E-92D9-BED45C4187F5}|KlantenSim_Utils\\KlantenSim_Utils.csproj|solutionrelative:klantensim_utils\\bestandlezerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\readers\\txtadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\readers\\txtadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\interfaces\\inaamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\interfaces\\inaamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\interfaces\\iadresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,16 +59,8 @@
       "RelativeMoniker": "D:0:0:{EACAE03C-3737-4BCB-B1F2-72CBBD17A874}|KlantenSim_ConsoleApp\\KlantenSim_UI_ConsoleApp.csproj|solutionrelative:klantensim_consoleapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\model\\gemeente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\model\\gemeente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\config\\readerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|solutionrelative:klantensimbl\\config\\readerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimdl\\readers\\txtadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C9C922B-003D-44DE-A179-90DCD8A564EC}|KlantenSimDL\\KlantenSim_DL.csproj|solutionrelative:klantensimdl\\readers\\txtadreslezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF3731A9-F66F-44AF-BB52-3568D07570D7}|KlantenSimBL\\KlantenSim_BL.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimbl\\interfaces\\inaamlezer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,52 +102,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "INaamRepository.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\INaamRepository.cs",
-              "RelativeDocumentMoniker": "KlantenSimBL\\Interfaces\\INaamRepository.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\INaamRepository.cs",
-              "RelativeToolTip": "KlantenSimBL\\Interfaces\\INaamRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T10:39:12.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "NaamRepository.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_DL_SQL\\NaamRepository.cs",
               "RelativeDocumentMoniker": "KlantenSim_DL_SQL\\NaamRepository.cs",
               "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_DL_SQL\\NaamRepository.cs",
               "RelativeToolTip": "KlantenSim_DL_SQL\\NaamRepository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAApwEoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAApwIoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-30T10:38:03.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "KlantenSim_ConsoleApp\\Program.cs",
               "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\Program.cs",
               "RelativeToolTip": "KlantenSim_ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAjwCQAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAjwCcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-28T21:00:59.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "NaamManager.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Managers\\NaamManager.cs",
               "RelativeDocumentMoniker": "KlantenSimBL\\Managers\\NaamManager.cs",
               "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Managers\\NaamManager.cs",
               "RelativeToolTip": "KlantenSimBL\\Managers\\NaamManager.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwDEAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-28T22:31:13.961Z",
               "EditorCaption": ""
@@ -160,22 +147,9 @@
               "RelativeDocumentMoniker": "KlantenSimBL\\Managers\\AdresManager.cs",
               "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Managers\\AdresManager.cs",
               "RelativeToolTip": "KlantenSimBL\\Managers\\AdresManager.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAuwC0AAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwCAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-28T21:01:33.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IAdresLezer.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\IAdresLezer.cs",
-              "RelativeDocumentMoniker": "KlantenSimBL\\Interfaces\\IAdresLezer.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\IAdresLezer.cs",
-              "RelativeToolTip": "KlantenSimBL\\Interfaces\\IAdresLezer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T21:35:04.749Z",
               "EditorCaption": ""
             },
             {
@@ -193,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "IAdresRepository.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\IAdresRepository.cs",
               "RelativeDocumentMoniker": "KlantenSimBL\\Interfaces\\IAdresRepository.cs",
@@ -206,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ReaderConfig.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Config\\ReaderConfig.cs",
               "RelativeDocumentMoniker": "KlantenSimBL\\Config\\ReaderConfig.cs",
@@ -224,7 +198,7 @@
               "RelativeDocumentMoniker": "KlantenSimDL\\Readers\\TxtNamenLezer.cs",
               "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\Readers\\TxtNamenLezer.cs",
               "RelativeToolTip": "KlantenSimDL\\Readers\\TxtNamenLezer.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwDIAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwF8AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-28T21:08:38.739Z",
               "EditorCaption": ""
@@ -243,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Voornaam.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Voornaam.cs",
               "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Voornaam.cs",
@@ -256,7 +230,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
+              "Title": "TxtAdresLezer.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\Readers\\TxtAdresLezer.cs",
+              "RelativeDocumentMoniker": "KlantenSimDL\\Readers\\TxtAdresLezer.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\Readers\\TxtAdresLezer.cs",
+              "RelativeToolTip": "KlantenSimDL\\Readers\\TxtAdresLezer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T21:08:35.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Gemeente.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Gemeente.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Gemeente.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Gemeente.cs",
+              "RelativeToolTip": "KlantenSimBL\\Model\\Gemeente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T21:11:36.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAdresLezer.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\IAdresLezer.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Interfaces\\IAdresLezer.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\IAdresLezer.cs",
+              "RelativeToolTip": "KlantenSimBL\\Interfaces\\IAdresLezer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T21:35:04.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "INaamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\INaamRepository.cs",
+              "RelativeDocumentMoniker": "KlantenSimBL\\Interfaces\\INaamRepository.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Interfaces\\INaamRepository.cs",
+              "RelativeToolTip": "KlantenSimBL\\Interfaces\\INaamRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T10:39:12.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_ConsoleApp\\appsettings.json",
               "RelativeDocumentMoniker": "KlantenSim_ConsoleApp\\appsettings.json",
@@ -265,30 +291,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-28T20:59:47.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Gemeente.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Gemeente.cs",
-              "RelativeDocumentMoniker": "KlantenSimBL\\Model\\Gemeente.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimBL\\Model\\Gemeente.cs",
-              "RelativeToolTip": "KlantenSimBL\\Model\\Gemeente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T21:11:36.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TxtAdresLezer.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\Readers\\TxtAdresLezer.cs",
-              "RelativeDocumentMoniker": "KlantenSimDL\\Readers\\TxtAdresLezer.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimDL\\Readers\\TxtAdresLezer.cs",
-              "RelativeToolTip": "KlantenSimDL\\Readers\\TxtAdresLezer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T21:08:35.569Z"
             },
             {
               "$type": "Document",
@@ -361,7 +363,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "AdresRepository.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSim_DL_SQL\\AdresRepository.cs",
               "RelativeDocumentMoniker": "KlantenSim_DL_SQL\\AdresRepository.cs",

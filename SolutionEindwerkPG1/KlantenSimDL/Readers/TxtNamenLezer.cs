@@ -93,6 +93,11 @@ namespace KlantenSim_DL.Readers
                     string achternaam = columns[instellingen.NaamIndex].Trim();
                     string frequency = columns[frequencyIndex].Trim();
 
+                    if (string.IsNullOrEmpty(achternaam) || achternaam.StartsWith("Stand der"))
+                    {
+                        break; // Stop reading the file entirely
+                    }
+
                     double actualFrequency = 0;
                     string cleanFreq = new string(frequency.Where(char.IsDigit).ToArray());
                     double.TryParse(cleanFreq, out actualFrequency);

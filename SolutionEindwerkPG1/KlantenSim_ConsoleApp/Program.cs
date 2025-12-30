@@ -33,9 +33,11 @@ namespace KlantenSim_ConsoleApp
 
 
             adresManager.VerwerkAlleAdressen(landenConfig);
-
+            Console.WriteLine($"\n---- ADRESSEN UPLOADED ----\n");
             naamManager.VerwerkAlleVoornamen(landenConfig);
-            //naamManager.VerwerkAlleAchternamen(landenConfig);
+            Console.WriteLine($"\n---- VOORNAMEN UPLOADED ----\n");
+            naamManager.VerwerkAlleAchternamen(landenConfig);
+            Console.WriteLine($"\n---- ACHTERNAMEN UPLOADED ----\n");
 
         }
     }
