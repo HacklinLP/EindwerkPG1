@@ -1,5 +1,5 @@
 USE KlantenSimulator
-SELECT *
+SELECT v.*, l.*
 FROM Versie v
 JOIN Land l on l.id = v.landenid
 JOIN Gemeente g on g.versieid = v.id

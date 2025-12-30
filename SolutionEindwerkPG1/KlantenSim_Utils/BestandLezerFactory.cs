@@ -21,5 +21,10 @@ namespace KlantenSim_Utils
         {
             return new AdresRepository(connectionString);
         }
+
+        public static INaamRepository MaakNaamRepository(string connectionString)
+        {
+            return new NaamRepository(connectionString);
+        }
     }
 }

@@ -13,11 +13,13 @@ namespace KlantenSim_BL.Managers
     {
         private readonly Dictionary<string, LandConfig> _landenConfig;
         private readonly INaamLezer _naamLezer;
+        private readonly INaamRepository _naamRepository;
 
-        public NaamManager(Dictionary<string, LandConfig> configData, INaamLezer naamLezer)
+        public NaamManager(Dictionary<string, LandConfig> configData, INaamLezer naamLezer, INaamRepository naamRepository)
         {
             _naamLezer = naamLezer;
             _landenConfig = configData;
+            _naamRepository = naamRepository;
         }
 
         public void VerwerkAlleVoornamen(Dictionary<string, LandConfig> landen)
@@ -39,13 +41,14 @@ namespace KlantenSim_BL.Managers
 
                             // 3. Call your name reader (you'll likely pass the specific file settings)
                             // Note: You pass 'bestand' for the path/gender and 'instellingen' for the indices/separator
-                            var namen = _naamLezer.LeesVoornamen(bestand, instellingen, huidigeVersieId);
+                            List<Voornaam> namen = _naamLezer.LeesVoornamen(bestand, instellingen, huidigeVersieId);
 
-                            Console.WriteLine($"Klaar! {namen.Count} voornamen gevonden voor {land.Key} ({bestand.Gender}).");
-                            for (int i = 0; i < 10; i++)
-                            {
-                                Console.WriteLine($"{namen[i].Naam} | {namen[i].Gender}");
-                            }
+                            //Console.WriteLine($"Klaar! {namen.Count} voornamen gevonden voor {land.Key} ({bestand.Gender}).");
+                            //for (int i = 0; i < 10; i++)
+                            //{
+                            //    Console.WriteLine($"{namen[i].Naam} | {namen[i].Gender}");
+                            //}
+                            _naamRepository.VoegVoornaamToe(land.Key.ToString(), versie.Key.ToString(), namen);
                         }
                         
                     }

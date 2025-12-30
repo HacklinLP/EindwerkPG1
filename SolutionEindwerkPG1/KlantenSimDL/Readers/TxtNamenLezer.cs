@@ -47,6 +47,12 @@ namespace KlantenSim_DL.Readers
                     string frequency = columns[frequencyIndex].Trim();
                     string gender = bestand.Gender;
 
+                    // DETECTION: If the name is empty or the line is a footer line
+                    if (string.IsNullOrEmpty(voornaam) || voornaam.StartsWith("*"))
+                    {
+                        break; // Stop reading the file entirely
+                    }
+
                     double actualFrequency = 0;
                     string cleanFreq = new string(frequency.Where(char.IsDigit).ToArray());
                     double.TryParse(cleanFreq, out actualFrequency);

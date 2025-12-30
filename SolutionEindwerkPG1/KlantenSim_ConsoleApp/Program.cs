@@ -26,14 +26,15 @@ namespace KlantenSim_ConsoleApp
             IAdresLezer adresLezer = BestandLezerFactory.MaakTxtAdresLezer();
             INaamLezer naamLezer = BestandLezerFactory.MaakTxtNamenLezer();
             IAdresRepository adresRepo = BestandLezerFactory.MaakAdresRepository(connString);
+            INaamRepository naamRepo = BestandLezerFactory.MaakNaamRepository(connString);
 
             AdresManager adresManager = new AdresManager(landenConfig, adresLezer, adresRepo);
-            NaamManager naamManager = new NaamManager(landenConfig, naamLezer);
+            NaamManager naamManager = new NaamManager(landenConfig, naamLezer, naamRepo);
 
 
             adresManager.VerwerkAlleAdressen(landenConfig);
 
-            //naamManager.VerwerkAlleVoornamen(landenConfig);
+            naamManager.VerwerkAlleVoornamen(landenConfig);
             //naamManager.VerwerkAlleAchternamen(landenConfig);
 
         }
