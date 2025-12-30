@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KlantenSim_UI_WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9e2fe6d2648cf71e78abb28c26c66be8fa86aaa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3050762c3705a5f28ecd88a9172cb8cd1eea8e88")]
 [assembly: System.Reflection.AssemblyProductAttribute("KlantenSim_UI_WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KlantenSim_UI_WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

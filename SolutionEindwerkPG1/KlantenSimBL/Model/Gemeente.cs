@@ -20,11 +20,20 @@ namespace KlantenSim_BL.Model
             Naam = naam;
             Straten = straten;
         }
+        public Gemeente()
+        {
+            
+        }
 
         public int Id { get; set; }
         public string Naam { get; set; }
         public List<Straat> Straten { get; set; }
         public int VersieId { get; set; }
+
+        public override string ToString()
+        {
+            return Naam;
+        }
 
     }
 }

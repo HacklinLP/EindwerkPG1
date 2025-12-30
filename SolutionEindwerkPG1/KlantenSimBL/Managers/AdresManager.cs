@@ -24,6 +24,11 @@ namespace KlantenSim_BL.Managers
             _adresRepository = adresRepository;
         }
 
+        public AdresManager(IAdresRepository adresRepository)
+        {
+            _adresRepository = adresRepository;
+        }
+
         public void VerwerkAlleAdressen(Dictionary<string, LandConfig> landen)
         {
             // Loop door elk land (België, Denemarken, etc.)
@@ -49,40 +54,16 @@ namespace KlantenSim_BL.Managers
                 }
             }
         }
-        // dit mag weg na het testen
-        //public void StartTestAdres(string pad)
-        //{
-        //    //adres
-        //    List<Gemeente> alleAdressen = _adresLezer.LeesAdressen(pad, adresInstellingen);
 
-        //    Console.WriteLine($"{alleAdressen.Count()} ADRESSEN GELADEN");
-
-        //    int adresCounter = 0;
-        //    foreach (Gemeente g in alleAdressen)
-        //    {
-        //        Console.WriteLine($"Found: {g.Id}, {g.Naam}, {g.Straten.Count()}");
-        //        adresCounter++;
-
-        //        if (adresCounter == 5) break;
-        //    }
-        //}
-
-        /*public void StartTestNaam(string pad)
+        public List<string> GeefAlleLanden()
         {
-            //naam
-            List<Naam> alleNamen = _namenLezer.LeesNamen(pad);
-
-            Console.WriteLine($"\n{alleNamen.Count()} NAMEN GELADEN");
-
-            int namenCounter = 0;
-            foreach (Naam n in alleNamen)
-            {
-                Console.WriteLine($"Found: {n.ID}, {n.NaamValue}, {n.Frequency}");
-                namenCounter++;
-
-                if (namenCounter == 5) break;
-            }
-        }*/
+            return _adresRepository.GeefAlleLanden();
+        }
+        public List<Gemeente> GeefGemeentesVoorLand(string landNaam)
+        {
+            // De manager roept de repository aan
+            return _adresRepository.GeefGemeentesVoorLand(landNaam);
+        }
 
 
     }

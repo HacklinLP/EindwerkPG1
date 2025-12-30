@@ -105,5 +105,57 @@ namespace KlantenSim_DL_SQL
                 }
             }
         }
+
+        public List<Gemeente> GeefGemeentesVoorLand(string landNaam)
+        {
+            List<Gemeente> gemeentes = new List<Gemeente>();
+
+            string sql = @"SELECT DISTINCT g.id, g.naam 
+                   FROM Gemeente g 
+                   JOIN Versie v ON g.versieid = v.id 
+                   JOIN Land l ON v.landenid = l.id 
+                   WHERE l.naam = @landNaam 
+                   ORDER BY g.naam";
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@landNaam", landNaam);
+
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        gemeentes.Add(new Gemeente
+                        {
+                            Id = (int)reader["id"],
+                            Naam = reader["naam"].ToString()
+                        });
+                    }
+                }
+            }
+            return gemeentes;
+        }
+
+        public List<string> GeefAlleLanden()
+        {
+            List<string> landen = new List<string>();
+            string sql = "SELECT naam FROM Land ORDER BY naam";
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        landen.Add(reader["naam"].ToString());
+                    }
+                }
+            }
+            return landen;
+        }
     }
 }
