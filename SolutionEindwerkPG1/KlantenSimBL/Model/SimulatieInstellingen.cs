@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KlantenSim_BL.Model
 {
-    public class SimulatieRequest
+    public class SimulatieInstellingen
     {
         public string Land { get; set; }
         public Dictionary<Gemeente, double> Gemeentes { get; set; }
@@ -16,5 +16,7 @@ namespace KlantenSim_BL.Model
         public int MaxLeeftijd { get; set; }
 
         public string Opdrachtgever { get; set; }
+        public int MaxHuisnummer { get; set; }
+        public double PercentageMetLetter { get; set; }
     }
 }

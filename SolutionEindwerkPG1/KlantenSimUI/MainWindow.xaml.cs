@@ -23,6 +23,8 @@ namespace KlantenSimUI;
 public partial class MainWindow : Window
 {
     private AdresManager _adresManager;
+    private SimManager _simManager;
+    private Dictionary<Gemeente, double> _gekozenGemeentes = new();
 
     public MainWindow()
     {
@@ -40,6 +42,7 @@ public partial class MainWindow : Window
 
             IAdresRepository adresRepo = BestandLezerFactory.MaakAdresRepository(connString);
             _adresManager = new AdresManager(adresRepo);
+            _simManager = new SimManager();
 
             LaadLanden();
         }
@@ -77,5 +80,60 @@ public partial class MainWindow : Window
 
         // Koppel de lijst aan de ListBox
         lbGemeentes.ItemsSource = gemeentes;
+    }
+
+    private void CheckBox_Changed(object sender, RoutedEventArgs e)
+    {
+        var cb = (CheckBox)sender;
+        var gemeente = (Gemeente)cb.Tag;
+
+        if (cb.IsChecked == true)
+        {
+            if (!_gekozenGemeentes.ContainsKey(gemeente))
+                _gekozenGemeentes.Add(gemeente, 0); // Start op 0%
+        }
+        else
+        {
+            _gekozenGemeentes.Remove(gemeente);
+        }
+    }
+
+    private void TextBox_Percentage_LostFocus(object sender, RoutedEventArgs e)
+    {
+        var tb = (TextBox)sender;
+        var gemeente = (Gemeente)tb.Tag;
+
+        if (double.TryParse(tb.Text, out double percentage))
+        {
+            if (_gekozenGemeentes.ContainsKey(gemeente))
+                _gekozenGemeentes[gemeente] = percentage;
+        }
+    }
+
+    private void btnSimuleer_Click(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            // 1. Doe hier de validatie of de gegevens wel correct zijn ingevuld allemaal
+            if (cbLanden.SelectedItem == null) throw new Exception("Selecteer eerst een land");
+
+            _simManager.
+
+            SimulatieInstellingen simInstelling = new SimulatieInstellingen
+            {
+                Land = cbLanden.SelectedItem.ToString(),
+                Opdrachtgever = txtOpdrachtgever.Text,
+                AantalKlanten = int.Parse
+            }
+
+        }
+        catch (FormatException)
+        {
+            MessageBox.Show("Zorg ervoor dat alle numerieke velden (leeftijd, aantal, huisnummer) correct zijn ingevuld.");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message);
+        }
     }
 }

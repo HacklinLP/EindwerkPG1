@@ -10,9 +10,9 @@ namespace KlantenSim_BL.Interfaces
     public interface IAdresRepository
     {
         // Ik stuur de versie als een string naar de repo (laat aanpassingen toe voor later en vermijd verwarring met de PK id van versie)
-        public void VoegAdresToe(string landNaam, string versie, List<Gemeente> gemeentes);
+        void VoegAdresToe(string landNaam, string versie, List<Gemeente> gemeentes);
 
-        public List<string> GeefAlleLanden();
-        public List<Gemeente> GeefGemeentesVoorLand(string landNaam);
+        List<string> GeefAlleLanden();
+        List<Gemeente> GeefGemeentesVoorLand(string landNaam);
     }
 }

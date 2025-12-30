@@ -9,8 +9,8 @@ namespace KlantenSim_BL.Interfaces
 {
     public interface INaamRepository
     {
-        public void VoegVoornaamToe(string landNaam, string versie, List<Voornaam> voornamen);
+        void VoegVoornaamToe(string landNaam, string versie, List<Voornaam> voornamen);
 
-        public void VoegAchternaamToe(string landNaam, string versie, List<Achternaam> achternamen);
+        void VoegAchternaamToe(string landNaam, string versie, List<Achternaam> achternamen);
     }
 }
