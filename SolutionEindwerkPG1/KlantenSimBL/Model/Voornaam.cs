@@ -8,16 +8,20 @@ namespace KlantenSim_BL.Model
 {
     public class Voornaam
     {
+        public Voornaam()
+        {
+        }
+
         public Voornaam(int? iD, string naam, string gender, double? frequency, int versieid)
         {
-            ID = iD;
+            Id = iD;
             Naam = naam;
             Gender = gender;
             Frequency = frequency;
             VersieId = versieid;
         }
 
-        public int? ID { get; set; }
+        public int? Id { get; set; }
         public string Naam { get; set; }
 
         public string Gender { get; set; }

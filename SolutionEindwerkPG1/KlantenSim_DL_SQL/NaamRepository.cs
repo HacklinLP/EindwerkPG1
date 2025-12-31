@@ -2,6 +2,7 @@
 using KlantenSim_BL.Model;
 using Microsoft.Data.SqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace KlantenSim_DL_SQL
             _connectionString = connectionString;
         }
 
+        #region DataReader
         public void VoegVoornaamToe(string land, string versie, List<Voornaam> voornamen)
         {
             using(SqlConnection conn = new SqlConnection(_connectionString))
@@ -148,6 +150,81 @@ namespace KlantenSim_DL_SQL
                 }
             }
         }
+        #endregion
 
+        public List<Voornaam> GeefVoornamenVoorVersie(int versieId)
+        {
+            List<Voornaam> voornamen = new List<Voornaam>();
+            string sql = "SELECT id, naam, gender, frequency, versieid FROM Voornaam WHERE versieid = @vId";
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@vId", versieId);
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Voornaam vn = new Voornaam();
+                        vn.Id = (int)reader["id"];
+                        vn.Naam = reader["naam"].ToString();
+                        vn.Gender = reader["gender"].ToString();
+                        vn.VersieId = (int)reader["versieid"];
+
+                        // Gebruik Convert.ToDouble om de SQL waarde (float) naar C# double te krijgen
+                        // En check op DBNull voor de veiligheid
+                        if (reader["frequency"] != DBNull.Value)
+                        {
+                            vn.Frequency = Convert.ToDouble(reader["frequency"]);
+                        }
+                        else
+                        {
+                            vn.Frequency = null;
+                        }
+
+                        voornamen.Add(vn);
+                    }
+                }
+            }
+            return voornamen;
+        }
+
+        public List<Achternaam> GeefAchternamenVoorVersie(int versieId)
+        {
+            List<Achternaam> achternamen = new List<Achternaam>();
+            string sql = "SELECT id, naam, frequency, versieid FROM Achternaam WHERE versieid = @vId";
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@vId", versieId);
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Achternaam an = new Achternaam();
+                        an.Id = (int)reader["id"];
+                        an.Naam = reader["naam"].ToString();
+                        an.VersieId = (int)reader["versieid"];
+
+                        // Gebruik Convert.ToDouble om de SQL waarde (float) naar C# double te krijgen
+                        // En check op DBNull voor de veiligheid
+                        if (reader["frequency"] != DBNull.Value)
+                        {
+                            an.Frequency = Convert.ToDouble(reader["frequency"]);
+                        }
+                        else
+                        {
+                            an.Frequency = null;
+                        }
+
+                        achternamen.Add(an);
+                    }
+                }
+            }
+            return achternamen;
+        }
     }
 }

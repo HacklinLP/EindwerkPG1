@@ -12,5 +12,7 @@ namespace KlantenSim_BL.Interfaces
         void VoegVoornaamToe(string landNaam, string versie, List<Voornaam> voornamen);
 
         void VoegAchternaamToe(string landNaam, string versie, List<Achternaam> achternamen);
+        List<Voornaam> GeefVoornamenVoorVersie(int versieId);
+        List<Achternaam> GeefAchternamenVoorVersie(int versieId);
     }
 }

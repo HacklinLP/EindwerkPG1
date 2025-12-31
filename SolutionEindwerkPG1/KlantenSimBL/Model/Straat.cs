@@ -2,6 +2,10 @@
 {
     public class Straat
     {
+        public Straat()
+        {
+        }
+
         public Straat(int id, string naam, int gemeenteId)
         {
             Id = id;

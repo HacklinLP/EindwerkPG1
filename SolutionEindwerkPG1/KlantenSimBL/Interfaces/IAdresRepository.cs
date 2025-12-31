@@ -14,5 +14,7 @@ namespace KlantenSim_BL.Interfaces
 
         List<string> GeefAlleLanden();
         List<Gemeente> GeefGemeentesVoorLand(string landNaam);
+        int GeefVersieIdVoorLand(string land);
+        List<Straat> GeefStratenVoorGemeentes(List<int> gemeenteIds, int versieId);
     }
 }

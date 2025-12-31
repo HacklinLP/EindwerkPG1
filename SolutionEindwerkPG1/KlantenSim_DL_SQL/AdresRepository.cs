@@ -13,7 +13,7 @@ namespace KlantenSim_DL_SQL
         {
             _connectionString = connectionstring;
         }
-
+        #region DataReader
         public void VoegAdresToe(string land, string versie, List<Gemeente> gemeentes)
         {
             // TODO: Vraag zeker nog eens uitleg over dit aan Gemini
@@ -105,7 +105,9 @@ namespace KlantenSim_DL_SQL
                 }
             }
         }
+        #endregion
 
+        #region UI -> Info weergeven vooraf
         public List<Gemeente> GeefGemeentesVoorLand(string landNaam)
         {
             List<Gemeente> gemeentes = new List<Gemeente>();
@@ -137,7 +139,6 @@ namespace KlantenSim_DL_SQL
             }
             return gemeentes;
         }
-
         public List<string> GeefAlleLanden()
         {
             List<string> landen = new List<string>();
@@ -157,5 +158,87 @@ namespace KlantenSim_DL_SQL
             }
             return landen;
         }
+        #endregion
+
+        #region SimManager
+        public int GeefVersieIdVoorLand(string land)
+        {
+            int versieId;
+
+            string sql = @"SELECT v.id 
+                         FROM Versie v
+                         JOIN Land l ON v.landenid = l.id
+                         WHERE l.naam = @landNaam";
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@landNaam", land);
+
+                try
+                {
+                    conn.Open();
+                    var result = cmd.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        versieId = Convert.ToInt32(result);
+                    }
+                    else
+                    {
+                        throw new Exception($"Geen versie gevonden voor land: {land}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Log de fout of gooi hem door naar de Manager
+                    throw new Exception("Fout bij het ophalen van VersieID", ex);
+                }
+            }
+            return versieId;
+        }
+
+        public List<Straat> GeefStratenVoorGemeentes(List<int> gemeenteIds, int versieId)
+        {
+            List<Straat> straten = new List<Straat>();
+
+            // We bouwen de "IN" clause voor SQL: bijv. (1, 5, 8)
+            // Dit doen we door de lijst van ints om te zetten naar een string gescheiden door komma's.
+            string idLijst = string.Join(",", gemeenteIds);
+
+            // De query filtert op de lijst van gemeentes EN de specifieke versieid
+            string sql = $"SELECT id, naam, gemeenteid, versieid FROM Straat " +
+                         $"WHERE gemeenteid IN ({idLijst}) AND versieid = @vId";
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@vId", versieId);
+
+                try
+                {
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            straten.Add(new Straat
+                            {
+                                Id = (int)reader["id"],
+                                Naam = reader["naam"].ToString(),
+                                GemeenteId = (int)reader["gemeenteid"],
+                                VersieId = (int)reader["versieid"]
+                            });
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Fout bij het ophalen van straten voor de geselecteerde gemeentes.", ex);
+                }
+            }
+            return straten;
+        }
+        #endregion
     }
 }

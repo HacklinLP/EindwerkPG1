@@ -1,16 +1,17 @@
 --USE KlantenSimulator;
 
---SELECT 
---    l.naam AS LandNaam,
---    v.versie AS VersieLabel,
---    g.naam AS GemeenteNaam,
---    s.id AS StraatID,
---    s.naam AS StraatNaam
---FROM Land l
---JOIN Versie v ON l.id = v.landenid
---JOIN Gemeente g ON v.id = g.versieid
---JOIN Straat s ON g.id = s.gemeenteid
---ORDER BY l.id, GemeenteNaam, StraatNaam;
+SELECT 
+    l.naam AS LandNaam,
+    v.versie AS VersieLabel,
+    g.naam AS GemeenteNaam,
+    s.id AS StraatID,
+    s.naam AS StraatNaam,
+    s.versieid
+FROM Land l
+JOIN Versie v ON l.id = v.landenid
+JOIN Gemeente g ON v.id = g.versieid
+JOIN Straat s ON g.id = s.gemeenteid
+ORDER BY l.id, GemeenteNaam, StraatNaam;
 
 
 -- SWITCH
@@ -34,15 +35,15 @@
 -- SWITCH
 
 
-USE KlantenSimulator;
+--USE KlantenSimulator;
 
-SELECT 
-    l.naam AS LandNaam,
-    v.versie AS VersieLabel,
-    an.id AS AchternaamID,
-    an.naam AS Achternaam,
-    an.frequency AS Frequentie
-FROM Land l
-JOIN Versie v ON l.id = v.landenid
-JOIN Achternaam an ON v.id = an.versieid
-ORDER BY LandNaam, Achternaam;
+--SELECT 
+--    l.naam AS LandNaam,
+--    v.versie AS VersieLabel,
+--    an.id AS AchternaamID,
+--    an.naam AS Achternaam,
+--    an.frequency AS Frequentie
+--FROM Land l
+--JOIN Versie v ON l.id = v.landenid
+--JOIN Achternaam an ON v.id = an.versieid
+--ORDER BY LandNaam, Achternaam;

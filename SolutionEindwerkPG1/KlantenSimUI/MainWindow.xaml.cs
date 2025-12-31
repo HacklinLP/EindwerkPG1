@@ -1,8 +1,10 @@
 ﻿using KlantenSim_BL.Interfaces;
 using KlantenSim_BL.Managers;
 using KlantenSim_BL.Model;
+using KlantenSim_UI_WPF;
 using KlantenSim_Utils;
 using Microsoft.Extensions.Configuration;
+using System.DirectoryServices.ActiveDirectory;
 using System.IO;
 using System.Text;
 using System.Windows;
@@ -41,8 +43,9 @@ public partial class MainWindow : Window
             string connString = configuration.GetConnectionString("SQLserver");
 
             IAdresRepository adresRepo = BestandLezerFactory.MaakAdresRepository(connString);
+            INaamRepository naamRepo = BestandLezerFactory.MaakNaamRepository(connString);
             _adresManager = new AdresManager(adresRepo);
-            _simManager = new SimManager();
+            _simManager = new SimManager(adresRepo, naamRepo);
 
             LaadLanden();
         }
@@ -117,14 +120,23 @@ public partial class MainWindow : Window
             // 1. Doe hier de validatie of de gegevens wel correct zijn ingevuld allemaal
             if (cbLanden.SelectedItem == null) throw new Exception("Selecteer eerst een land");
 
-            _simManager.
-
             SimulatieInstellingen simInstelling = new SimulatieInstellingen
             {
                 Land = cbLanden.SelectedItem.ToString(),
+                Gemeentes = _gekozenGemeentes,
+                AantalKlanten = int.Parse(txtAantalKlanten.Text),
+                MinLeeftijd = int.Parse(txtMinLeeftijd.Text),
+                MaxLeeftijd = int.Parse(txtMaxLeeftijd.Text),
                 Opdrachtgever = txtOpdrachtgever.Text,
-                AantalKlanten = int.Parse
-            }
+                MaxHuisnummer = int.Parse(txtMaxHuisnummer.Text),
+                PercentageMetLetter = double.Parse(txtPercentageLetter.Text),
+                
+            };
+
+            List<SimulatieKlant> resultaat = _simManager.StartSimulatie(simInstelling);
+
+            ResultaatWindow resultaatWindow = new ResultaatWindow(resultaat);
+            resultaatWindow.Show();
 
         }
         catch (FormatException)
