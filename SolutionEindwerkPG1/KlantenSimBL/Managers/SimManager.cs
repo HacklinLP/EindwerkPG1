@@ -2,6 +2,7 @@
 using KlantenSim_BL.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace KlantenSim_BL.Managers
         {
             // --- 1. Data ophalen uit de repo's ---
             int versieId = _adresRepo.GeefVersieIdVoorLand(instellingen.Land);
+            Debug.WriteLine($"Simulatie start met VersieID: {versieId}");
 
             // adres
             List<int> gemeenteIds = instellingen.Gemeentes.Keys.Select(g => g.Id).ToList();
@@ -39,6 +41,11 @@ namespace KlantenSim_BL.Managers
             // Bereken de totalen één keer vooraf
             double totaalFrequentieVoornamen = voornamen.Sum(v => v.Frequency ?? 0);
             double totaalFrequentieAchternamen = achternamen.Sum(a => a.Frequency ?? 0);
+
+            Debug.WriteLine($"Versie: {versieId}");
+            Debug.WriteLine($"Straten: {beschikbareStraten.Count}");
+            Debug.WriteLine($"Voornamen: {voornamen.Count}");
+            Debug.WriteLine($"Achternamen: {achternamen.Count}");
 
             // --- 2. De loop om klanten te genereren ---
             for (int i = 0; i < instellingen.AantalKlanten; i++)

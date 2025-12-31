@@ -26,7 +26,7 @@ public partial class MainWindow : Window
 {
     private AdresManager _adresManager;
     private SimManager _simManager;
-    private Dictionary<Gemeente, double> _gekozenGemeentes = new();
+    private Dictionary<Gemeente, double> _gekozenGemeentes;
 
     public MainWindow()
     {
@@ -67,6 +67,9 @@ public partial class MainWindow : Window
     {
         if (cbLanden.SelectedItem != null)
         {
+            _gekozenGemeentes = new Dictionary<Gemeente, double>();
+            lbGemeentes.ItemsSource = null;
+            
             string geselecteerdLand = cbLanden.SelectedItem.ToString();
 
             // Haal de gemeentes op via de manager
@@ -115,8 +118,8 @@ public partial class MainWindow : Window
 
     private void btnSimuleer_Click(object sender, RoutedEventArgs e)
     {
-        try
-        {
+       // try
+       // {
             // 1. Doe hier de validatie of de gegevens wel correct zijn ingevuld allemaal
             if (cbLanden.SelectedItem == null) throw new Exception("Selecteer eerst een land");
 
@@ -138,14 +141,14 @@ public partial class MainWindow : Window
             ResultaatWindow resultaatWindow = new ResultaatWindow(resultaat);
             resultaatWindow.Show();
 
-        }
-        catch (FormatException)
+       // }
+        /*catch (FormatException)
         {
             MessageBox.Show("Zorg ervoor dat alle numerieke velden (leeftijd, aantal, huisnummer) correct zijn ingevuld.");
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.Message);
-        }
+            MessageBox.Show(ex.Message, ex.StackTrace);
+        }*/
     }
 }
