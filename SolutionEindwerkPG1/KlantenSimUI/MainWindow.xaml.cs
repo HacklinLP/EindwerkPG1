@@ -28,32 +28,12 @@ public partial class MainWindow : Window
     private SimManager _simManager;
     private Dictionary<Gemeente, double> _gekozenGemeentes;
 
-    public MainWindow()
+    public MainWindow(AdresManager adresManager, SimManager simManager)
     {
         InitializeComponent();
-
-        try
-        {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-
-            IConfiguration configuration = builder.Build();
-
-            string connString = configuration.GetConnectionString("SQLserver");
-
-            IAdresRepository adresRepo = BestandLezerFactory.MaakAdresRepository(connString);
-            INaamRepository naamRepo = BestandLezerFactory.MaakNaamRepository(connString);
-            ISimulatieRepository simRepo = BestandLezerFactory.MaakSimulatieRepository(connString);
-            _adresManager = new AdresManager(adresRepo);
-            _simManager = new SimManager(adresRepo, naamRepo, simRepo);
-
-            LaadLanden();
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show($"Fout bij het opstarten: {ex.Message}");
-        }
+        _adresManager = adresManager;
+        _simManager = simManager;
+        LaadLanden();
     }
 
     private void LaadLanden()
