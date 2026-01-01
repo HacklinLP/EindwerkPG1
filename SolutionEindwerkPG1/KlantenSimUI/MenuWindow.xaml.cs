@@ -33,7 +33,7 @@ namespace KlantenSim_UI_WPF
 
         private void btnSimMaken_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(_adresManager, _simManager);
+            SimulatorMaken main = new SimulatorMaken(_adresManager, _simManager);
             main.Show();
         }
 

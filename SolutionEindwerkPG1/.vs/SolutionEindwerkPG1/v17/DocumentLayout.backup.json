@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\simulatormaken.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\simulatormaken.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\simulatormaken.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\simulatormaken.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -10,24 +22,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lucas\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\menuwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\menuwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\resultaatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\resultaatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|solutionrelative:klantensimui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B7D1D921-3F69-42CD-B4A4-305F3033067D}|KlantenSimUI\\KlantenSim_UI_WPF.csproj|c:\\users\\lucas\\documents\\hogent\\eindwerk_pg1\\eindwerkpg1\\solutioneindwerkpg1\\klantensimui\\resultaatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -161,7 +161,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -174,19 +174,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "KlantenSimUI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "KlantenSimUI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAqwB4AAABGAAAAAAAAAA==",
+              "Title": "SimulatorMaken.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\SimulatorMaken.xaml.cs",
+              "RelativeDocumentMoniker": "KlantenSimUI\\SimulatorMaken.xaml.cs",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\SimulatorMaken.xaml.cs",
+              "RelativeToolTip": "KlantenSimUI\\SimulatorMaken.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-30T13:14:29.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MenuWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MenuWindow.xaml.cs",
               "RelativeDocumentMoniker": "KlantenSimUI\\MenuWindow.xaml.cs",
@@ -212,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\App.xaml",
               "RelativeDocumentMoniker": "KlantenSimUI\\App.xaml",
@@ -224,12 +224,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MenuWindow.xaml",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MenuWindow.xaml",
               "RelativeDocumentMoniker": "KlantenSimUI\\MenuWindow.xaml",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MenuWindow.xaml",
-              "RelativeToolTip": "KlantenSimUI\\MenuWindow.xaml",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MenuWindow.xaml*",
+              "RelativeToolTip": "KlantenSimUI\\MenuWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-31T15:30:17.673Z",
               "EditorCaption": ""
@@ -249,19 +249,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "KlantenSimUI\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\MainWindow.xaml",
-              "RelativeToolTip": "KlantenSimUI\\MainWindow.xaml",
+              "DocumentIndex": 1,
+              "Title": "SimulatorMaken.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\SimulatorMaken.xaml",
+              "RelativeDocumentMoniker": "KlantenSimUI\\SimulatorMaken.xaml",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\SimulatorMaken.xaml",
+              "RelativeToolTip": "KlantenSimUI\\SimulatorMaken.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-30T13:10:18.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs",
@@ -312,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ResultaatWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\Documents\\HoGent\\Eindwerk_PG1\\EindwerkPG1\\SolutionEindwerkPG1\\KlantenSimUI\\ResultaatWindow.xaml.cs",
               "RelativeDocumentMoniker": "KlantenSimUI\\ResultaatWindow.xaml.cs",

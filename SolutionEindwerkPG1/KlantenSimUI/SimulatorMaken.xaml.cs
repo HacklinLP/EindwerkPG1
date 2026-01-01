@@ -22,13 +22,13 @@ namespace KlantenSimUI;
 /// <summary>
 /// Interaction logic for MainWindow.xaml
 /// </summary>
-public partial class MainWindow : Window
+public partial class SimulatorMaken : Window
 {
     private AdresManager _adresManager;
     private SimManager _simManager;
     private Dictionary<Gemeente, double> _gekozenGemeentes;
 
-    public MainWindow(AdresManager adresManager, SimManager simManager)
+    public SimulatorMaken(AdresManager adresManager, SimManager simManager)
     {
         InitializeComponent();
         _adresManager = adresManager;
