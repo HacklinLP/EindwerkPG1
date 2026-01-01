@@ -44,8 +44,9 @@ public partial class MainWindow : Window
 
             IAdresRepository adresRepo = BestandLezerFactory.MaakAdresRepository(connString);
             INaamRepository naamRepo = BestandLezerFactory.MaakNaamRepository(connString);
+            ISimulatieRepository simRepo = BestandLezerFactory.MaakSimulatieRepository(connString);
             _adresManager = new AdresManager(adresRepo);
-            _simManager = new SimManager(adresRepo, naamRepo);
+            _simManager = new SimManager(adresRepo, naamRepo, simRepo);
 
             LaadLanden();
         }
@@ -136,9 +137,9 @@ public partial class MainWindow : Window
                 
             };
 
-            List<SimulatieKlant> resultaat = _simManager.StartSimulatie(simInstelling);
+            (List<SimulatieKlant> resultaat, SimulatieInfo info) = _simManager.StartSimulatie(simInstelling);
 
-            ResultaatWindow resultaatWindow = new ResultaatWindow(resultaat);
+            ResultaatWindow resultaatWindow = new ResultaatWindow(_simManager, resultaat, info, simInstelling);
             resultaatWindow.Show();
 
        // }

@@ -13,15 +13,17 @@ namespace KlantenSim_BL.Managers
     {
         private readonly IAdresRepository _adresRepo;
         private readonly INaamRepository _naamRepo;
+        private readonly ISimulatieRepository _simRepo;
         private readonly Random _rng = new Random();
 
-        public SimManager(IAdresRepository adresRepo, INaamRepository naamRepo)
+        public SimManager(IAdresRepository adresRepo, INaamRepository naamRepo, ISimulatieRepository simRepo)
         {
             _adresRepo = adresRepo;
             _naamRepo = naamRepo;
+            _simRepo = simRepo;
         }
 
-        public List<SimulatieKlant> StartSimulatie(SimulatieInstellingen instellingen)
+        public (List<SimulatieKlant>, SimulatieInfo) StartSimulatie(SimulatieInstellingen instellingen)
         {
             // --- 1. Data ophalen uit de repo's ---
             int versieId = _adresRepo.GeefVersieIdVoorLand(instellingen.Land);
@@ -90,7 +92,24 @@ namespace KlantenSim_BL.Managers
                     // Opdrachtgever = instellingen.Opdrachtgever ----- DENK NIET DAT DIT BIJ DE SIMULATIEKLANT MOET
                 });
             }
-            return klantenLijst;
+            var leeftijden = klantenLijst.Select(k => DateTime.Now.Year - k.Geboortedatum.Year).ToList();
+
+            SimulatieInfo info = new SimulatieInfo
+            {
+                AanmaakDatum = DateTime.Now,
+                AantalKlantenAangemaakt = klantenLijst.Count,
+                JongsteLeeftijd = leeftijden.Min(),
+                OudsteLeeftijd = leeftijden.Max(),
+                GemiddeldeLeeftijd = leeftijden.Average(),
+                versieId = versieId
+
+            };
+            return (klantenLijst, info);
+        }
+
+        public void BewaarSimulatie(SimulatieInfo info, SimulatieInstellingen instellingen, List<SimulatieKlant> klanten)
+        {
+            _simRepo.BewaarSimulatie(info, instellingen, klanten);
         }
 
         // --- Hulp methodes voor de logica ---

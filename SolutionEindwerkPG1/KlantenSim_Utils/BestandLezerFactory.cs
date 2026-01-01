@@ -26,5 +26,10 @@ namespace KlantenSim_Utils
         {
             return new NaamRepository(connectionString);
         }
+
+        public static ISimulatieRepository MaakSimulatieRepository(string connectionString)
+        {
+            return new SimulatieRepository(connectionString);
+        }
     }
 }

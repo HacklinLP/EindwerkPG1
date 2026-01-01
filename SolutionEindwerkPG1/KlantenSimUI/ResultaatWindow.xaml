@@ -10,6 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -17,6 +18,7 @@
         
         <TextBlock Text="Gegenereerde klanten:" Grid.Row="0" Grid.Column="0" Margin="5"/>
         <DataGrid x:Name="dgKlanten" AutoGenerateColumns="True" IsReadOnly="True" Margin="5" Grid.Row="1" Grid.Column="0"/>
-        
+        <Button Content="Opslaan" x:Name="btnOpslaan" Grid.Row="2" Grid.Column="0" Margin="5" Click="btnOpslaan_Click"/>
+
     </Grid>
 </Window>
