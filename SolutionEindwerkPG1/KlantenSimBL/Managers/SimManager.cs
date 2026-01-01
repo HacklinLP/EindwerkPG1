@@ -88,7 +88,7 @@ namespace KlantenSim_BL.Managers
                     Huisnummer = huisnummer,
                     Gemeente = gekozenGemeente.Naam,
                     Geboortedatum = geboortedatum,
-                    BrondataId = versieId
+                    SimInfoId = versieId
                     // Opdrachtgever = instellingen.Opdrachtgever ----- DENK NIET DAT DIT BIJ DE SIMULATIEKLANT MOET
                 });
             }
@@ -110,6 +110,16 @@ namespace KlantenSim_BL.Managers
         public void BewaarSimulatie(SimulatieInfo info, SimulatieInstellingen instellingen, List<SimulatieKlant> klanten)
         {
             _simRepo.BewaarSimulatie(info, instellingen, klanten);
+        }
+
+        public List<SimulatieInfo> HaalSimulatieInfoOp()
+        {
+            
+            return _simRepo.HaalSimulatieInfoOp();
+        }
+        public List<SimulatieKlant>? HaalSimulatieKlantenOp(int simId)
+        {
+            return _simRepo.HaalSimulatieKlantenOp(simId);
         }
 
         // --- Hulp methodes voor de logica ---
@@ -141,6 +151,7 @@ namespace KlantenSim_BL.Managers
             }
             return result;
         }
+
         #endregion
     }
 }

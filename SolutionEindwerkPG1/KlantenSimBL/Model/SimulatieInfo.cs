@@ -8,6 +8,10 @@ namespace KlantenSim_BL.Model
 {
     public class SimulatieInfo
     {
+        public SimulatieInfo()
+        {
+        }
+
         public int Id { get; set; }
         public DateTime AanmaakDatum { get; set; }
         public int AantalKlantenAangemaakt { get; set; }
@@ -15,6 +19,7 @@ namespace KlantenSim_BL.Model
         public int OudsteLeeftijd { get; set; }
         public double GemiddeldeLeeftijd { get; set; }
         public int versieId { get; set; }
+        public string Opdrachtgever { get; set; }
     }
 
     

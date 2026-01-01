@@ -1,0 +1,29 @@
+﻿<Window x:Class="KlantenSim_UI_WPF.SimulatieBekijkenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KlantenSim_UI_WPF"
+        mc:Ignorable="d"
+        Title="SimulatieBekijken" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Info over voorgaande simulaties:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <DataGrid x:Name="dgSimInfo" AutoGenerateColumns="True" IsReadOnly="True" Margin="5" Grid.Row="1" Grid.Column="0">
+            <DataGrid.Resources>
+                <ContextMenu x:Key="Menu">
+                    <MenuItem Header="Bekijk Simulatie" Click="MenuItem_BekijkSimulatie"/>
+                </ContextMenu>
+            </DataGrid.Resources>
+            <DataGrid.RowStyle>
+            <Style TargetType="DataGridRow">
+                <Setter Property="ContextMenu" Value="{StaticResource Menu}" />
+            </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
+    </Grid>
+</Window>

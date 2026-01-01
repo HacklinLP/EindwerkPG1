@@ -22,9 +22,11 @@ namespace KlantenSim_UI_WPF
     public partial class ResultaatWindow : Window
     {
         private readonly SimManager _simManager;
-        private readonly List<SimulatieKlant> _klanten;
+        private List<SimulatieKlant> _klanten;
         private readonly SimulatieInfo _info;
         private readonly SimulatieInstellingen _instellingen;
+        private int _herbekijkSimId;
+        
         public ResultaatWindow(SimManager simManager, List<SimulatieKlant> klanten, SimulatieInfo info, SimulatieInstellingen instellingen)
         {
             InitializeComponent();
@@ -32,7 +34,21 @@ namespace KlantenSim_UI_WPF
             _klanten = klanten;
             _info = info;
             _instellingen = instellingen;
-            dgKlanten.ItemsSource = klanten;
+            dgKlanten.ItemsSource = _klanten;
+
+            btnOpslaan.Visibility = Visibility.Visible;
+        }
+
+        public ResultaatWindow(int simId, SimManager simManager )
+        {
+            InitializeComponent();
+            _simManager = simManager;
+            _herbekijkSimId = simId;
+            btnOpslaan.Visibility = Visibility.Collapsed;
+
+            _klanten = _simManager.HaalSimulatieKlantenOp(_herbekijkSimId);
+
+            dgKlanten.ItemsSource = _klanten;
         }
 
         private void btnOpslaan_Click(object sender, RoutedEventArgs e)

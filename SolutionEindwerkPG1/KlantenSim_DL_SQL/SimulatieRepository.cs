@@ -105,5 +105,72 @@ namespace KlantenSim_DL_SQL
                 }
             }
         }
+
+        public List<SimulatieInfo> HaalSimulatieInfoOp()
+        {
+            List<SimulatieInfo> lijst = new List<SimulatieInfo>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                // De query die we zojuist hebben opgesteld
+                string sql = "SELECT * FROM SimulatieInfo ORDER BY aanmaakdatum DESC";
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        lijst.Add(new SimulatieInfo
+                        {
+                            Id = (int)reader["id"],
+                            AanmaakDatum = (DateTime)reader["aanmaakdatum"],
+                            AantalKlantenAangemaakt = (int)reader["aantalaangemaakt"],
+                            JongsteLeeftijd = (int)reader["jongsteleeftijd"],
+                            OudsteLeeftijd = (int)reader["oudsteleeftijd"],
+                            GemiddeldeLeeftijd = Convert.ToDouble(reader["gemiddeldeleeftijd"]),
+                            versieId = (int)reader["versieid"],
+                            Opdrachtgever = (string)reader["opdrachtgever"]
+                        });
+                    }
+                }
+            }
+            return lijst;
+        }
+
+        public List<SimulatieKlant> HaalSimulatieKlantenOp(int simId)
+        {
+            List<SimulatieKlant> klanten = new List<SimulatieKlant>();
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string sql = "SELECT * FROM SimulatieKlant WHERE siminfoid = @id";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", simId);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        klanten.Add(new SimulatieKlant
+                        {
+                            Id = (int)reader["id"],
+                            Voornaam = reader["voornaam"].ToString(),
+                            Achternaam = reader["achternaam"].ToString(),
+                            Gender = reader["gender"].ToString(),
+                            Voornaamkans = reader["voornaamkans"].ToString(),
+                            Achternaamkans = reader["achternaamkans"].ToString(),
+                            Straat = reader["straat"].ToString(),
+                            Huisnummer = reader["huisnummer"].ToString(),
+                            Gemeente = reader["gemeente"].ToString(),
+                            Geboortedatum = (DateTime)reader["geboortedatum"],
+                            SimInfoId = (int)reader["siminfoid"]
+                        });
+                    }
+                }
+            }
+            return klanten;
+        }
     }
 }

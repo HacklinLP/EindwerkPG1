@@ -12,7 +12,7 @@ namespace KlantenSim_BL.Model
         {
         }
 
-        public SimulatieKlant(int id, string voornaam, string achternaam, string gender, string gemeente, string straat, string huisnummer, DateTime geboortedatum, int brondataId)
+        public SimulatieKlant(int id, string voornaam, string achternaam, string gender, string gemeente, string straat, string huisnummer, DateTime geboortedatum, int siminfoid)
         {
             Id = id;
             Voornaam = voornaam;
@@ -22,7 +22,7 @@ namespace KlantenSim_BL.Model
             Straat = straat;
             Huisnummer = huisnummer;
             Geboortedatum = geboortedatum;
-            BrondataId = brondataId;
+            SimInfoId = siminfoid;
         }
 
         public int Id { get; set; }
@@ -36,6 +36,6 @@ namespace KlantenSim_BL.Model
         public string Straat { get; set; }
         public string Huisnummer { get; set; }
         public DateTime Geboortedatum { get; set; }
-        public int BrondataId { get; set; } // gelinked aan de ID van versie
+        public int SimInfoId { get; set; } // gelinked aan de ID van versie
     }
 }

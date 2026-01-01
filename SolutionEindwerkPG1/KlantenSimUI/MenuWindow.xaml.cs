@@ -1,4 +1,5 @@
 ﻿using KlantenSim_BL.Managers;
+using KlantenSim_BL.Model;
 using KlantenSimUI;
 using System;
 using System.Collections.Generic;
@@ -39,7 +40,8 @@ namespace KlantenSim_UI_WPF
 
         private void btnSimBekijken_Click(object sender, RoutedEventArgs e)
         {
-
+            SimulatieBekijkenWindow simulatieBekijkenWindow = new SimulatieBekijkenWindow(_adresManager, _simManager);
+            simulatieBekijkenWindow.Show();
         }
 
         private void btn_SimExporteren_Click(object sender, RoutedEventArgs e)

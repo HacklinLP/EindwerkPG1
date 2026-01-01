@@ -10,28 +10,27 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Border BorderBrush="Black" BorderThickness="2" Padding="0" Margin="5">
+        <Border BorderBrush="DimGray"  BorderThickness="2" Padding="0" Margin="5" >
             <TextBlock Text="Kies een optie" FontWeight="Medium" FontSize="20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Margin="0,5,0,5" HorizontalAlignment="Center"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="2" Padding="0" Margin="5" Grid.Row="1" Grid.Column="0">
+        <Border BorderBrush="DimGray" BorderThickness="2" Padding="0" Margin="5" Grid.Row="1" Grid.Column="0">
             <Grid>
-                <Grid.RowDefinitions Height="*"/>
-                <Grid.RowDefinitions Height="*"/>
-                <Grid.RowDefinitions Height="*"/>
-                <Grid.RowDefinitions Height="*"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Button Content="Simulatie Maken" Click="btnSimMaken_Click" Grid.Row="0" Grid.Column="0" Margin="15" />
+                <Button Content="Simulatie Bekijken" Click="btnSimBekijken_Click" Grid.Row="1" Grid.Column="0" Margin="15"/>
+                <Button Content="Simulatie Exporteren (wip)" Click="btn_SimExporteren_Click" Grid.Row="2" Grid.Column="0" Margin="15"/>
+                <Button Content="Exit" Click="btnExit_Click" Grid.Row="3" Grid.Column="0" Padding="10" Margin="15"/>
             </Grid>
-            <Button Content="Simulatie Maken" Click="btnSimMaken_Click" Grid.Row="1" Grid.Column="0" Margin="50,15,50,15"/>
-            <Button Content="Simulatie Bekijken" Click="btnSimBekijken_Click" Grid.Row="2" Grid.Column="0" Margin="50,15,50,15"/>
-            <Button Content="Simulatie Exporteren (wip)" Click="btn_SimExporteren_Click" Grid.Row="3" Grid.Column="0" Margin="50,15,50,15"/>
-            <Button Content="Exit" Click="btnExit_Click" Grid.Row="4" Grid.Column="0" Margin="50,15,50,15" Padding="0,10,0,10"/>
         </Border>
 
 
