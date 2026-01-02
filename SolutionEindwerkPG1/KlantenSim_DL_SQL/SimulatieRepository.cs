@@ -172,5 +172,60 @@ namespace KlantenSim_DL_SQL
             }
             return klanten;
         }
+
+        public SimulatieInstellingen HaalSimulatieInstellingenOp(int simId)
+        {
+            SimulatieInstellingen inst = new();
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                // Haal de hoofdinstellingen op
+                string sql = "SELECT * FROM SimulatieInstellingen WHERE siminfoid = @id";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", simId);
+                conn.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        inst = new SimulatieInstellingen
+                        {
+                            Id = (int)reader["id"],
+                            Land = reader["land"].ToString(),
+                            AantalKlanten = (int)reader["aantalklanten"],
+                            MinLeeftijd = (int)reader["minleeftijd"],
+                            MaxLeeftijd = (int)reader["maxleeftijd"],
+                            Opdrachtgever = reader["opdrachtgever"].ToString(),
+                            MaxHuisnummer = (int)reader["maxhuisnummer"],
+                            PercentageMetLetter = Convert.ToDouble(reader["percentagemetletter"]),
+                            Gemeentes = new Dictionary<Gemeente, double>() // Initialiseer dictionary
+                        };
+                    }
+                }
+                if (inst != null)
+                {
+                    string sqlGem = "SELECT naam, percentage FROM GemeenteInstellingen WHERE siminstellingid = @instId";
+                    using (SqlCommand cmdGem = new SqlCommand(sqlGem, conn))
+                    {
+                        cmdGem.Parameters.AddWithValue("@instId", inst.Id);
+                        using (SqlDataReader readerGem = cmdGem.ExecuteReader())
+                        {
+                            while (readerGem.Read())
+                            {
+                                // We maken een tijdelijk Gemeente object aan met enkel de naam
+                                Gemeente g = new Gemeente
+                                {
+                                    Naam = readerGem["naam"].ToString()
+                                };
+                                double percentage = Convert.ToDouble(readerGem["percentage"]);
+
+                                inst.Gemeentes.Add(g, percentage);
+                            }
+                        }
+                    }
+                }
+            }
+            return inst;
+        }
     }
 }

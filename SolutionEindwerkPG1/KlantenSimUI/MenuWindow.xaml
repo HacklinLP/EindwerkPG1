@@ -23,13 +23,11 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <Button Content="Simulatie Maken" Click="btnSimMaken_Click" Grid.Row="0" Grid.Column="0" Margin="15" />
                 <Button Content="Simulatie Bekijken" Click="btnSimBekijken_Click" Grid.Row="1" Grid.Column="0" Margin="15"/>
-                <Button Content="Simulatie Exporteren (wip)" Click="btn_SimExporteren_Click" Grid.Row="2" Grid.Column="0" Margin="15"/>
-                <Button Content="Exit" Click="btnExit_Click" Grid.Row="3" Grid.Column="0" Padding="10" Margin="15"/>
+                <Button Content="Exit" Click="btnExit_Click" Grid.Row="2" Grid.Column="0" Padding="10" Margin="15"/>
             </Grid>
         </Border>
 

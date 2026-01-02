@@ -117,11 +117,17 @@ namespace KlantenSim_BL.Managers
             
             return _simRepo.HaalSimulatieInfoOp();
         }
+
         public List<SimulatieKlant>? HaalSimulatieKlantenOp(int simId)
         {
             return _simRepo.HaalSimulatieKlantenOp(simId);
         }
 
+
+        public SimulatieInstellingen HaalInstellingenOp(int simId)
+        {
+            return _simRepo.HaalSimulatieInstellingenOp(simId);
+        }
         // --- Hulp methodes voor de logica ---
         #region Hulpmethodes
         private T KiesGewogenItem<T>(IEnumerable<T> items, Func<T, double> gewichtSelector)
@@ -151,6 +157,7 @@ namespace KlantenSim_BL.Managers
             }
             return result;
         }
+
 
         #endregion
     }

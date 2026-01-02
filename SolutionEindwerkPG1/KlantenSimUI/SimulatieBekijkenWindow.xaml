@@ -16,7 +16,9 @@
         <DataGrid x:Name="dgSimInfo" AutoGenerateColumns="True" IsReadOnly="True" Margin="5" Grid.Row="1" Grid.Column="0">
             <DataGrid.Resources>
                 <ContextMenu x:Key="Menu">
-                    <MenuItem Header="Bekijk Simulatie" Click="MenuItem_BekijkSimulatie"/>
+                    <MenuItem Header="Bekijk Simulatie Klanten" Click="MenuItem_BekijkSimulatieKlanten"/>
+                    <MenuItem Header="Bekijk Simulatie Instellingen" Click="MenuItem_BekijkSimulatieInstellingen"/>
+                    <MenuItem Header="Exporteer Simulatie" Click="MenuItem_ExporteerSimulatie"/>
                 </ContextMenu>
             </DataGrid.Resources>
             <DataGrid.RowStyle>

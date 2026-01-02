@@ -24,12 +24,14 @@ namespace KlantenSim_UI_WPF
     {
         private readonly AdresManager _adresManager;
         private readonly SimManager _simManager;
+        private readonly ExportManager _exportManager;
 
-        public MenuWindow(AdresManager adresManager, SimManager simManager)
+        public MenuWindow(AdresManager adresManager, SimManager simManager, ExportManager exportManager)
         {
             InitializeComponent();
             _adresManager = adresManager;
             _simManager = simManager;
+            _exportManager = exportManager;
         }
 
         private void btnSimMaken_Click(object sender, RoutedEventArgs e)
@@ -40,14 +42,15 @@ namespace KlantenSim_UI_WPF
 
         private void btnSimBekijken_Click(object sender, RoutedEventArgs e)
         {
-            SimulatieBekijkenWindow simulatieBekijkenWindow = new SimulatieBekijkenWindow(_adresManager, _simManager);
+            SimulatieBekijkenWindow simulatieBekijkenWindow = new SimulatieBekijkenWindow(_adresManager, _simManager, _exportManager);
             simulatieBekijkenWindow.Show();
         }
 
-        private void btn_SimExporteren_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        //private void btn_SimExporteren_Click(object sender, RoutedEventArgs e)
+        //{
+        //    SimulatieExportWindow simulatieExportWindow = new SimulatieExportWindow(_exportManager);
+        //    simulatieExportWindow.Show();
+        //}
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {

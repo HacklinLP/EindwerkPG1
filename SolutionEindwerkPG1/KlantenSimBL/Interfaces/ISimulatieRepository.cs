@@ -10,8 +10,11 @@ namespace KlantenSim_BL.Interfaces
     public interface ISimulatieRepository
     {
         void BewaarSimulatie(SimulatieInfo info, SimulatieInstellingen instellingen, List<SimulatieKlant> klanten);
+
         List<SimulatieInfo> HaalSimulatieInfoOp();
 
         List<SimulatieKlant> HaalSimulatieKlantenOp(int simId);
+
+        SimulatieInstellingen HaalSimulatieInstellingenOp(int simId);
     }
 }

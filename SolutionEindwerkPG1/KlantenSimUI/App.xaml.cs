@@ -17,6 +17,7 @@ public partial class App : Application
 {
     private AdresManager _adresManager;
     private SimManager _simManager;
+    private ExportManager _exportManager;
 
     protected override void OnStartup(StartupEventArgs e)
     {
@@ -38,9 +39,10 @@ public partial class App : Application
 
             _adresManager = new AdresManager(adresRepo);
             _simManager = new SimManager(adresRepo, naamRepo, simRepo);
+            _exportManager = new ExportManager();
 
             // Start het MenuWindow en geef de managers mee via de constructor
-            MenuWindow menu = new MenuWindow(_adresManager, _simManager);
+            MenuWindow menu = new MenuWindow(_adresManager, _simManager, _exportManager);
             menu.Show();
         }
         catch (Exception ex)

@@ -24,7 +24,7 @@ namespace KlantenSim_BL.Model
             PercentageMetLetter = percentageMetLetter;
         }
 
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Land { get; set; }
         public Dictionary<Gemeente, double> Gemeentes { get; set; }
         public int AantalKlanten { get; set; }

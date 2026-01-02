@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\lucas\Documents\HoGent\Eindwerk_PG1\EindwerkPG1\SolutionEindwerkPG1\KlantenSimUI\App.xaml
-4-670177103
+52041265417
 
-9-1647514229
+10173993959
 232-829186366
-MenuWindow.xaml;ResultaatWindow.xaml;SimulatieBekijkenWindow.xaml;SimulatorMaken.xaml;
+MenuWindow.xaml;ResultaatWindow.xaml;SimulatieBekijkenWindow.xaml;SimulatieExportWindow.xaml;SimulatorMaken.xaml;
 
 False
 

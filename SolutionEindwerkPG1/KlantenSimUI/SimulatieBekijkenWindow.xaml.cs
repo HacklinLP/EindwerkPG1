@@ -23,18 +23,20 @@ namespace KlantenSim_UI_WPF
     {
         private readonly AdresManager _adresManager;
         private readonly SimManager _simManager;
-        public SimulatieBekijkenWindow(AdresManager adresManager, SimManager simManager)
+        private ExportManager _exportManager;
+        public SimulatieBekijkenWindow(AdresManager adresManager, SimManager simManager, ExportManager exportManager)
         {
             InitializeComponent();
             _adresManager = adresManager;
             _simManager = simManager;
+            _exportManager = exportManager;
 
             List<SimulatieInfo> simulatieInfos = _simManager.HaalSimulatieInfoOp();
 
             dgSimInfo.ItemsSource = simulatieInfos;
         }
 
-        private void MenuItem_BekijkSimulatie(object sender, RoutedEventArgs e)
+        private void MenuItem_BekijkSimulatieKlanten(object sender, RoutedEventArgs e)
         {
             if (dgSimInfo.SelectedItem is SimulatieInfo geselecteerdeSim)
             {
@@ -42,6 +44,23 @@ namespace KlantenSim_UI_WPF
                 // We moeten dan wel zorgen dat dit window de data kan inladen op basis van de ID
                 ResultaatWindow detailWindow = new ResultaatWindow(geselecteerdeSim.Id, _simManager);
                 detailWindow.Show();
+            }
+        }
+
+        private void MenuItem_BekijkSimulatieInstellingen(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_ExporteerSimulatie(object sender, RoutedEventArgs e)
+        {
+            if (dgSimInfo.SelectedItem is SimulatieInfo geselecteerdeSimInfo)
+            {
+                var klanten = _simManager.HaalSimulatieKlantenOp(geselecteerdeSimInfo.Id);
+                var instellingen = _simManager.HaalInstellingenOp(geselecteerdeSimInfo.Id);
+
+                SimulatieExportWindow exportWindow = new SimulatieExportWindow(_exportManager, geselecteerdeSimInfo, instellingen, klanten);
+                exportWindow.ShowDialog();
             }
         }
     }
