@@ -33,7 +33,7 @@
         <ComboBox x:Name="cbLanden" SelectionChanged="cbLanden_SelectionChanged" Grid.Row="1" Grid.Column="1" Margin="5"/>
 
         <TextBlock Text="(optioneel) Specifieke Gemeente:" Grid.Row="2" Grid.Column="0" Margin="5"/>
-        <ListBox x:Name="lbGemeentes" Grid.Row="2" Grid.Column="1" Margin="5">
+        <ListBox x:Name="lbGemeentes" VirtualizingStackPanel.IsVirtualizing="False" Grid.Row="2" Grid.Column="1" Margin="5">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">

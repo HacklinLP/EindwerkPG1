@@ -99,8 +99,8 @@ public partial class SimulatorMaken : Window
 
     private void btnSimuleer_Click(object sender, RoutedEventArgs e)
     {
-       // try
-       // {
+        try
+        {
             // 1. Doe hier de validatie of de gegevens wel correct zijn ingevuld allemaal
             if (cbLanden.SelectedItem == null) throw new Exception("Selecteer eerst een land");
 
@@ -122,14 +122,14 @@ public partial class SimulatorMaken : Window
             ResultaatWindow resultaatWindow = new ResultaatWindow(_simManager, resultaat, info, simInstelling);
             resultaatWindow.Show();
 
-       // }
-        /*catch (FormatException)
+        }
+        catch (FormatException)
         {
             MessageBox.Show("Zorg ervoor dat alle numerieke velden (leeftijd, aantal, huisnummer) correct zijn ingevuld.");
         }
         catch (Exception ex)
         {
             MessageBox.Show(ex.Message, ex.StackTrace);
-        }*/
+        }
     }
 }

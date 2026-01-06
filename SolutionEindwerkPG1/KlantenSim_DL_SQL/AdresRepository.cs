@@ -234,7 +234,7 @@ namespace KlantenSim_DL_SQL
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception("Fout bij het ophalen van straten voor de geselecteerde gemeentes.", ex);
+                    throw new Exception("Fout bij het ophalen van straten voor de geselecteerde gemeentes. (Hoogstwaarschijnlijk geen gemeentes aangeduidt)", ex);
                 }
             }
             return straten;
