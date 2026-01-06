@@ -44,20 +44,13 @@ namespace KlantenSim_BL.Managers
             // Bij singlebestand gebruiken we Create, bij 2 bestanden overschrijven we de info-file
             using (StreamWriter sw = new StreamWriter(infoPad))
             {
-                sw.WriteLine($"=== STATISTIEKEN (Simulatie ID: {info.Id}) ===");
-                sw.WriteLine($"Datum{separator}{info.AanmaakDatum:dd/MM/yyyy HH:mm}");
-                sw.WriteLine($"Aantal klanten aangemaakt{separator}{info.AantalKlantenAangemaakt}");
-                sw.WriteLine($"Gemiddelde leeftijd{separator}{info.GemiddeldeLeeftijd}");
-                sw.WriteLine($"Leeftijdsbereik{separator}{info.JongsteLeeftijd} - {info.OudsteLeeftijd}");
-                sw.WriteLine($"{info.Id}{separator}{info.AanmaakDatum:dd/MM/yyyy HH:mm}{separator}{info.AantalKlantenAangemaakt}{separator}{info.GemiddeldeLeeftijd}{separator}{info.JongsteLeeftijd} - {info.OudsteLeeftijd}");
-
+                sw.WriteLine($"=== STATISTIEKEN (SimulatieInfo) ===");
+                sw.WriteLine($"Id{separator}Datum{separator}Aantal klanten aangemaakt{separator}Gemiddelde leeftijd{separator}JongsteLeeftijd{separator}OudsteLeeftijd");
+                sw.WriteLine($"{info.Id}{separator}{info.AanmaakDatum:dd/MM/yyyy HH:mm}{separator}{info.AantalKlantenAangemaakt}{separator}{info.GemiddeldeLeeftijd}{separator}{info.JongsteLeeftijd}{separator}{info.OudsteLeeftijd}");
                 sw.WriteLine("");
                 sw.WriteLine($"=== META-INFO (Instellingen) ===");
-                sw.WriteLine($"Opdrachtgever{separator}{inst.Opdrachtgever}");
-                sw.WriteLine($"Land{separator}{inst.Land}");
-                sw.WriteLine($"Max Huisnummer{separator}{inst.MaxHuisnummer}");
-                sw.WriteLine($"Percentage met letter{separator}{inst.PercentageMetLetter}%");
-
+                sw.WriteLine($"Opdrachtgever{separator}Land{separator}Max Huisnummer{separator}Percentage met letter");
+                sw.WriteLine($"{inst.Opdrachtgever}{separator}{inst.Land}{separator}{inst.MaxHuisnummer}{separator}{inst.PercentageMetLetter}");
                 sw.WriteLine("");
             }
 
