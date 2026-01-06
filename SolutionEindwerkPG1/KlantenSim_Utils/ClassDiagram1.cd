@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KlantenSim_BL.Managers.AdresManager">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Managers.ExportManager">
+    <Position X="16.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Managers.NaamManager">
+    <Position X="16.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Managers.SimManager">
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.Achternaam">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.Adres">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.Gemeente">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.SimulatieInfo">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.SimulatieInstellingen">
+    <Position X="12.5" Y="1.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.SimulatieKlant">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.Straat">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Model.Voornaam">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Exceptions.InstellingenException">
+    <Position X="12.5" Y="0.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Config.LandConfig" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Config.VersieInstellingen" Collapsed="true">
+    <Position X="2.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Config.AdresInstellingen" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Config.VoornaamInstellingen" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Config.AchternaamInstellingen" Collapsed="true">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="KlantenSim_BL.Config.BestandenConfig" Collapsed="true">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="KlantenSim_BL.Interfaces.IAdresLezer" Collapsed="true">
+    <Position X="19.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="KlantenSim_BL.Interfaces.IAdresRepository" Collapsed="true">
+    <Position X="19.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="KlantenSim_BL.Interfaces.INaamLezer" Collapsed="true">
+    <Position X="19.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="KlantenSim_BL.Interfaces.INaamRepository" Collapsed="true">
+    <Position X="19.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="KlantenSim_BL.Interfaces.ISimulatieRepository" Collapsed="true">
+    <Position X="23.25" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
